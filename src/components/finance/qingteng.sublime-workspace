@@ -1,0 +1,1170 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"report"
+			],
+			[
+				"V",
+				"VueRouter"
+			],
+			[
+				"sub",
+				"sub"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"me",
+				"menuObj"
+			],
+			[
+				"men",
+				"menuObj"
+			],
+			[
+				"fin",
+				"finance"
+			],
+			[
+				"se",
+				"selected"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"my",
+				"myChart1"
+			],
+			[
+				"com",
+				"component"
+			],
+			[
+				"component",
+				"components"
+			],
+			[
+				"remove",
+				"remove〔function〕"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"send",
+				"sendPhoneCodeTime"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"max",
+				"maxlength	Attr"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ajax",
+				"ajaxRequests"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ht",
+				"htmlInclude"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"do",
+				"dot"
+			],
+			[
+				"pr",
+				"priv"
+			],
+			[
+				"sa",
+				"salename"
+			],
+			[
+				"order",
+				"orderend"
+			],
+			[
+				"moe",
+				"movestart"
+			],
+			[
+				"move",
+				"movestart"
+			],
+			[
+				"key",
+				"key"
+			],
+			[
+				"prote",
+				"protectConfirm"
+			],
+			[
+				"oper",
+				"operationId"
+			],
+			[
+				"page",
+				"pagesize"
+			],
+			[
+				"check",
+				"checkLength"
+			],
+			[
+				"chec",
+				"checked"
+			],
+			[
+				"protect",
+				"protect"
+			],
+			[
+				"cfms",
+				"cfmsalesman"
+			],
+			[
+				"select",
+				"selectOper"
+			],
+			[
+				"jq",
+				"jq"
+			],
+			[
+				"p",
+				"placeholder	Attr"
+			],
+			[
+				"get",
+				"get	Get Elements"
+			],
+			[
+				"getUr",
+				"getUrlQueryString"
+			],
+			[
+				"login",
+				"logintype"
+			],
+			[
+				"start",
+				"startKey"
+			],
+			[
+				"end",
+				"endKey"
+			],
+			[
+				"logi",
+				"logintype"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"selec",
+				"selectCity"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"addC",
+				"addCarts"
+			],
+			[
+				"chars",
+				"chartsObj"
+			],
+			[
+				"product",
+				"productNumber"
+			],
+			[
+				"prod",
+				"productId"
+			],
+			[
+				"char",
+				"chartsObj"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"cal",
+				"callback"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"styles",
+				"StyleSheet"
+			],
+			[
+				"car",
+				"CarsDetails"
+			],
+			[
+				"titl",
+				"title"
+			],
+			[
+				"lis",
+				"listDatas"
+			],
+			[
+				"data",
+				"datas"
+			],
+			[
+				"datas",
+				"dataSource"
+			],
+			[
+				"con",
+				"connect"
+			],
+			[
+				"rendu",
+				"renducer"
+			],
+			[
+				"style",
+				"styles"
+			],
+			[
+				"conditionC",
+				"_conditionConfirm"
+			],
+			[
+				"isS",
+				"isReset"
+			],
+			[
+				"is",
+				"isReset"
+			],
+			[
+				"cond",
+				"conditionText"
+			],
+			[
+				"value",
+				"values"
+			],
+			[
+				"butt",
+				"buttonSelected"
+			],
+			[
+				"Conver",
+				"ConvertWidth"
+			],
+			[
+				"_",
+				"_conditionSelected"
+			],
+			[
+				"padd",
+				"paddingBottom"
+			],
+			[
+				"paddint",
+				"paddingBottom"
+			],
+			[
+				"marg",
+				"marginTop"
+			],
+			[
+				"co",
+				"column"
+			],
+			[
+				"padding",
+				"paddingBottom"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"STY",
+				"StyleSheet"
+			],
+			[
+				"s",
+				"SheetStyle"
+			],
+			[
+				"flex",
+				"flexDirection"
+			],
+			[
+				"Scr",
+				"ScrollView"
+			],
+			[
+				"S",
+				"ScrollView"
+			],
+			[
+				"Car",
+				"CarListItem"
+			],
+			[
+				"Pro",
+				"props"
+			],
+			[
+				"hig",
+				"height"
+			],
+			[
+				"Flex",
+				"flexDirection"
+			],
+			[
+				"trans",
+				"translateX"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"_on",
+				"_onSelectBrand"
+			],
+			[
+				"title",
+				"titleText"
+			],
+			[
+				"ttit",
+				"titleContainer"
+			],
+			[
+				"tabTe",
+				"tabTextSelected"
+			],
+			[
+				"tabe",
+				"tabTextSelect"
+			],
+			[
+				"Cars",
+				"CarsScreen"
+			],
+			[
+				"sym",
+				"symbolAnimated"
+			],
+			[
+				"tabBar",
+				"tabBarItemSelected"
+			],
+			[
+				"TABE",
+				"tabBarSelectSymbol"
+			],
+			[
+				"cons",
+				"constructor"
+			],
+			[
+				"ful",
+				"fullWidth"
+			],
+			[
+				"head",
+				"headNavSelected"
+			],
+			[
+				"headN",
+				"headNavItem"
+			],
+			[
+				"icon",
+				"iconName"
+			],
+			[
+				"Tabr",
+				"TabBarItem"
+			],
+			[
+				"v",
+				"View"
+			],
+			[
+				"REND",
+				"_renderScene"
+			],
+			[
+				"ta",
+				"TABS_ARRS"
+			],
+			[
+				"Tab",
+				"TarBarIOS"
+			],
+			[
+				"bind",
+				"bindActionCreators"
+			],
+			[
+				"todo",
+				"todos"
+			],
+			[
+				"load",
+				"loadTodos"
+			],
+			[
+				"STYLEs",
+				"styles"
+			],
+			[
+				"Text",
+				"TextInput"
+			],
+			[
+				"_pre",
+				"_pressWebPage"
+			],
+			[
+				"to",
+				"TouchableOpacity"
+			],
+			[
+				"Sample",
+				"SampleComponent"
+			],
+			[
+				"t",
+				"TouchableOpacity"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Volumes/Document/work/project/office_web/static/src/html/user.html",
+			"settings":
+			{
+				"buffer_size": 6214,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/**\n	description: 共用js文件\n	author: Gary Deng\n**/\n;\n(function (window, qingteng) {\n	//ajax请求发送记录\n	var ajaxRequests = {};\n\n	/**\n		@options {object} 传入参数 example: {\n			url: '',\n			type: 'post',\n			name: '',	//请求名称，用于重复请求判断\n			params: {} //请求参数\n			before: null, //请求之前的回调函数\n			callback: null, //请求完成回调函数，失败直接返回false，否则反悔请求结果\n		}\n	**/\n	function ajax (options) {\n		if (!options.url) return;\n		var name = options.name || options.url;\n		if (ajaxRequests[name]) return;\n		ajaxRequests[name] = true;\n		$.ajax({\n			url: options.url,\n			type: options.type || 'post',\n			beforeSend: function () {\n				options.before && options.before();\n			},\n			dataType: 'json',\n			data: options.params || {},\n			success: function(result) {\n				options.callback && options.callback(result);\n			},\n			error: function() {\n				options.callback && options.callback('');\n			},\n			complete: function () {\n				ajaxRequests[name] = false;\n			}\n		});\n	}\n\n	/** \n		文本验证\n		@text {string} 验证自字符串\n		@type {string} 验证类型 phone: 手机号码\n	**/\n	function validate (text, type) {\n		if (!text || !type) return false;\n		var regx;\n		switch (type) {\n			case 'phone':\n				regx = /^1[3|4|5|7|8]\\d{9}$/;\n				break;\n			case 'pwd':\n				regx = /^\\s\\S{6,20}$/;\n				break;\n			case 'email':\n				regx = /^\\w+([-+.]\\w+)*@\\w+([-.]\\\\w+)*\\.\\w+([-.]\\w+)*$/;\n				break;\n			case 'card':\n				regx = /^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/;\n				break;\n		}\n		if (!regx) return false;\n		return regx.test(text);\n	}\n\n	/**\n		弹出框\n		@message {string} 弹出框文本\n		@type {string} 类型：confirm,error,correct\n	**/\n	function alert(message, type, callback) {\n		var modal = $('<div class=\"modal modal-alert\"></div>');\n		var btns;\n		var text = $('<div class=\"text\">' + message +'</div>');\n		switch (type) {\n			case 'confirm':\n				var message = $('<div class=\"modal-alert--message\"></div>');\n				message.append(text);\n				modal.append(message);\n				btns = $('<div class=\"modal-alert--btns\"></div>');\n				var cancel = $('<a class=\"modal-alert--btns--item\" data-value=\"0\" href=\"javascript:void(0)\">取消</a>');\n				var confirm = $('<a class=\"modal-alert--btns--item item-confirm\" data-value=\"1\" href=\"javascript:void(0)\">确认</a>');\n				btns.append(cancel);\n				btns.append(confirm);\n				break;\n			case 'correct':\n				var message = $('<div class=\"modal-alert--message\"></div>');\n				var icon = $('<div class=\"icon\"><img src=\"/img/icon/correct.png\" /></div>');\n				message.append(icon);\n				message.append(text);\n				modal.append(message);\n				window.setTimeout(function () {\n					modal.fadeOut(2000, function() {\n						callback && callback();\n						modal.remove();\n					})\n				}, 1000);\n				break;\n		}\n		if (btns) {\n			btns.on('click', '[data-value]', function() {\n				var val = $(this).attr('data-value');\n				 callback && callback(val);\n				 modal.remove();\n			});\n			modal.append(btns);\n		}\n		$('body').append(modal);\n	}\n\n	qingteng.alert = alert;\n	qingteng.validate = validate;\n	qingteng.ajax = ajax;\n\n	window.qingteng = qingteng;\n})(window,  window.qingteng || {});",
+			"file": "/Volumes/Document/work/project/office_web/static/src/js/common.js",
+			"file_size": 3182,
+			"file_write_time": 131118151530000000,
+			"settings":
+			{
+				"buffer_size": 2978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Document/work/project/office_web/static/js/user.js",
+			"settings":
+			{
+				"buffer_size": 3070,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Document/work/project/office_web/static/src/js/user.js",
+			"settings":
+			{
+				"buffer_size": 3061,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Document/work/project/office_web/static/src/scss/_user.scss",
+			"settings":
+			{
+				"buffer_size": 4402,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 167.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Document/work/project/office_web",
+		"/Volumes/Document/work/project/office_web/qingteng",
+		"/Volumes/Document/work/project/office_web/static/js",
+		"/Volumes/Document/work/project/office_web/static/src",
+		"/Volumes/Document/work/project/office_web/static/src/dist/html",
+		"/Volumes/Document/work/project/office_web/static/src/html/include",
+		"/Volumes/Document/work/project/office_web/static/src/img/icon",
+		"/Volumes/Document/work/project/office_web/static/src/js",
+		"/Volumes/Document/work/project/office_web/static/src/scss"
+	],
+	"file_history":
+	[
+		"/Volumes/Document/work/project/dataOperations/web/src/html/include/footer.html",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/util/style.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/js/config/menu.js",
+		"/Volumes/Document/work/project/dataOperations/web/src/components/common/navigation.vue",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/style.scss",
+		"/Volumes/Document/work/project/dataOperations/web/gulpfile.js",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/mixins/_common.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/include/_content.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/util/_common.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/include/_common.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/js/finance/index.js",
+		"/Volumes/Document/work/project/dataOperations/web/src/html/index.html",
+		"/Volumes/Document/work/project/dataOperations/web/src/js/finance.js",
+		"/Volumes/Document/work/project/dataOperations/web/src/js/enterprise.js",
+		"/Volumes/Document/work/project/dataOperations/web/webpack-dev.config.js",
+		"/Volumes/Document/work/project/dataOperations/web/webpack-base.config.js",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/mixins/common.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/components/common/header.vue",
+		"/Volumes/Document/work/project/dataOperations/web/package.json",
+		"/Volumes/Document/work/project/dataOperations/web/src/html/include/header.html",
+		"/Volumes/Document/work/project/dataOperations/web/webpack-build.config.js",
+		"/Volumes/Document/work/project/dataOperations/web/src/components/common/footer.vue",
+		"/Volumes/Document/work/project/dataOperations/web/src/html/finance/index.html",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/include/_footer.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/include/_header.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/include/_navigation.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/include/navigation.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/include/header.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/scss/mixins/_mixin.scss",
+		"/Volumes/Document/work/project/dataOperations/web/src/components/navigation.vue",
+		"/Volumes/Document/work/project/dataOperations/web/dist/js/vendor/jquery.min.js",
+		"/Volumes/Document/work/project/dataOperations/web/src/components/finance/index.vue",
+		"/Volumes/Document/work/project/office_web/static/src/html/test.html",
+		"/Volumes/Document/work/project/office_web/scss/_login.scss",
+		"/Volumes/Document/work/project/office_web/scss/_head.scss",
+		"/Volumes/Document/work/project/office_web/scss/_user.scss",
+		"/Volumes/Document/work/project/office_web/js/user.js",
+		"/Volumes/Document/work/project/office_web/js/register.js",
+		"/Volumes/Document/work/project/office_web/html/user.html",
+		"/Volumes/Document/work/project/office_web/js/common.js",
+		"/Volumes/Document/work/project/office_web/scss/_common.scss",
+		"/Users/Gary/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Volumes/Document/work/project/office_web/bower.json",
+		"/Volumes/Document/work/project/office_web/html/include/header.html",
+		"/Volumes/Document/work/project/office_web/html/login.html",
+		"/Volumes/Document/work/project/office_web/html/include/footer.html",
+		"/Volumes/Document/work/project/office_web/scss/style.scss",
+		"/Volumes/Document/work/project/office_web/js/login.js",
+		"/Volumes/Document/work/project/office_web/html/register.html",
+		"/Volumes/Document/work/project/office_web/gulpfile.js",
+		"/Volumes/Document/work/project/office_web/html/index.html",
+		"/Volumes/Document/work/project/office_web/login.html",
+		"/Volumes/Document/work/project/office_web/html/test.html",
+		"/Volumes/Document/work/project/office_web/register.html",
+		"/Volumes/Document/work/project/office_web/scss/_footer.scss",
+		"/Volumes/Document/work/project/office_web/include/header.html",
+		"/Volumes/Document/work/project/office_web/package.json",
+		"/Volumes/Document/work/project/office_web/scss/test.html",
+		"/Volumes/Document/work/project/office_web/footer.html",
+		"/Volumes/Document/work/project/office_web/include/footer.html",
+		"/Volumes/Document/work/project/office_web/index.html",
+		"/Volumes/Document/work/project/office_web/css/style.css",
+		"/Volumes/Document/work/project/office_web/components/scss/_bem.scss",
+		"/Users/Gary/Documents/. gitignore",
+		"/Users/Gary/Documents/.gitignore",
+		"/Volumes/Document/work/project/qingteng/bower.json",
+		"/Volumes/Document/work/project/qingteng/package.json",
+		"/Volumes/Document/work/project/qingteng/webpack-build.config.js",
+		"/Volumes/Document/dev/examples/chargercloud/webpack-dev.config.js",
+		"/Volumes/Document/dev/examples/chargercloud/webpack-build.config.js",
+		"/Volumes/Document/dev/examples/chargercloud/webpack-base.config.js",
+		"/Volumes/Document/dev/examples/chargercloud/package.json",
+		"/Volumes/Document/dev/examples/chargercloud/index.php",
+		"/Volumes/Document/dev/examples/chargercloud/include.php",
+		"/Volumes/Document/dev/examples/chargercloud/gulpfile.js",
+		"/Users/Gary/Downloads/首页.html",
+		"/Volumes/Document/dev/examples/chargercloud/dist/js/common.js",
+		"/Users/Gary/project/pv/node_modules/table/node_modules/lodash/package/fp/__.js",
+		"/Users/Gary/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/README.rst",
+		"/Users/Gary/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/packages.json",
+		"/Users/Gary/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Volumes/Document/dev/examples/chargercloud/src/js/utils/path.js",
+		"/Users/Gary/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Gary/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/admin/scripts/client/highSeas.js",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/agent/css/dls/dls_xt.css",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/templates/sendAjax.html",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/templates/client/highSeas.html",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/agent/scripts/client/highSeas.js",
+		"/Volumes/Document/work/project/src/www/my.workec.com/templates/error.html",
+		"/Volumes/Document/work/project/src/app/my.workec.com/modules/crm/controllers/ShareController.php",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/templates/client/index_index.html",
+		"/Volumes/Document/work/project/src/www/admin.workec.com/templates/sendAjax.html",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/admin/scripts/client/highSease.js",
+		"/Volumes/Document/work/project/src/www/admin.workec.com/templates/client/fallSetting.html",
+		"/Volumes/Document/work/project/src/www/admin.workec.com/templates/client/highSease.html",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/admin/client",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/admin/scripts/common.js",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/agent/scripts/common.js",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/templates/client/highSease.html",
+		"/Volumes/Document/work/project/src/www/my.workec.com/templates/crm/crm_details.html",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/templates/client/client_charge.html",
+		"/Volumes/Document/work/project/src/app/agent.workec.com/modules/client/controllers/IndexController.php",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/templates/pager_show.html",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/scripts/paydial/audit.js",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/agent/scripts/paydial/audit.js",
+		"/Volumes/Document/work/project/src/www/admin.workec.com/templates/client/gold_index.html",
+		"/Volumes/Document/work/project/src/www/admin.workec.com/templates/statistic/preview/try.html",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/agent/scripts/statistic/telact.js",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/css/layout.css",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/templates/statistic/preview/try.html",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/admin/css/layout.css",
+		"/Volumes/Document/work/project/src/www/www.workec.com/404.html",
+		"/Volumes/Document/work/project/src/sftp-config.json",
+		"/Volumes/Document/work/project/src/www/www.staticec.com/my/scripts/crm/ec_crm_share.js",
+		"/Volumes/Document/work/project/src/www/my.workec.com/templates/crm/sharing.html",
+		"/Volumes/Document/work/project/src/www/agent.workec.com/404.html",
+		"/Volumes/Document/work/project/src/app/my.workec.com/modules/crm/controllers/HomeController.php",
+		"/Volumes/Document/work/project/src/www/my.workec.com/templates/work/crm_index.html",
+		"/Volumes/Document/work/project/src/www/my.workec.com/include/ueditor/php/config.php",
+		"/Volumes/Document/work/project/src/www/admin.workec.com/404.html",
+		"/Volumes/Document/work/project/fesource/README.md",
+		"/Volumes/Document/dev/examples/shopping/template/carts.html",
+		"/Volumes/Document/dev/examples/shopping/js/slider.js",
+		"/Volumes/Document/dev/nevmsg/App/src/js/containers/Base.js",
+		"/Volumes/Document/dev/nevmsg/App/src/js/reducers/carList.js",
+		"/Volumes/Document/dev/nevmsg/App/src/js/containers/CarsFilter.js",
+		"/Volumes/Document/dev/nevmsg/App/src/js/containers/Index.ios.js"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/Document/work/project/dataOperations/web/src/img/icon",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"v-link",
+			"tree",
+			"test",
+			"menu.js",
+			"test",
+			"selectedClass",
+			"sidebar--head",
+			"type-finance-",
+			"8080",
+			"browserSync",
+			"reload",
+			"btn-info-submit",
+			"user-info-setting",
+			"btn-user-edit",
+			"submit-register",
+			"999",
+			"crumbs",
+			"implemented",
+			"Options to be implemented",
+			"timestamp",
+			"AF85E5",
+			"9A8BCB",
+			"62",
+			"es6",
+			"auto_complete_triggers",
+			"protactSalesmanId",
+			"layer",
+			"\nlayer",
+			"layer",
+			"selectPriv",
+			"sendAjax",
+			"fall-item-container",
+			"layer",
+			"jq.",
+			"jq(",
+			"jq",
+			"jQuery",
+			"salesman",
+			"salename",
+			"salesman",
+			"client_charge.html",
+			"new ecCropTree",
+			"orderend",
+			"pager-container",
+			"setSearchStatus",
+			"moveend",
+			"defaultParams",
+			"movequery",
+			"data-key",
+			"rangetime",
+			"pager-container",
+			"pager_show p",
+			"pager_show",
+			"pager-container",
+			"getUrlQueryParams",
+			"objectURL",
+			"function objURL(url)",
+			"objURL",
+			"include",
+			"pager-container",
+			"pager_",
+			"cfmselectoper",
+			"sendAjax",
+			"#protact",
+			"protectcount",
+			"tbolist",
+			"jq('#tbolist')",
+			"10001",
+			"pager_show",
+			"export",
+			"defaultParams",
+			"getUrlQueryString",
+			"getUrlQueryParams",
+			"getUrlQueryString",
+			"getUrlQuery",
+			"getUrlString",
+			"getUrlQueryString",
+			"protactSalesmanId",
+			"id=\"gj",
+			"salesman",
+			"data-login",
+			".hide",
+			"setSearchStatus",
+			"search",
+			"logintypes",
+			"salesman",
+			"loginend",
+			"data-key",
+			"loginend",
+			"keyword",
+			"setSearchStatus",
+			"cfmcompanies",
+			"clientselect",
+			"protect",
+			"cfmsalesman",
+			"gjmdf",
+			"readO",
+			"select_arrow",
+			"bt_in",
+			"szd_g",
+			"sle_ct",
+			"confirmSelectOper",
+			"selectOper",
+			"confirmOper",
+			");\n",
+			"selectOper",
+			"所属操作员",
+			";\n",
+			"chboxConfirm",
+			"company-item--name",
+			"protect-confirm--companies",
+			"class=>",
+			"'],\n",
+			"');\n",
+			"literal",
+			"layer",
+			"openWindow",
+			"end",
+			"data-login",
+			"btime",
+			"MyCalendar",
+			"chargerecord",
+			"export",
+			"changeSelect",
+			"chargerecord",
+			"gjmdf",
+			"selectTreeBack",
+			"gjname"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"class=\"company-item\">",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Volumes/Document/work/project/office_web/static/src/html/user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								74
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Volumes/Document/work/project/office_web/static/src/js/common.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								836,
+								836
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Volumes/Document/work/project/office_web/static/js/user.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2800,
+								2808
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Volumes/Document/work/project/office_web/static/src/js/user.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								418,
+								418
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Volumes/Document/work/project/office_web/static/src/scss/_user.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4041,
+								4041
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2967.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 94.0
+	},
+	"output.sftp":
+	{
+		"height": 94.0
+	},
+	"pinned_build_system": "",
+	"project": "qingteng.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"box/system.js",
+				"www/www.staticec.com/my/scripts/box/system.js"
+			],
+			[
+				"templates/work/crm_index.html",
+				"www/my.workec.com/templates/work/crm_index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/Document/work/project/dataOperations/web/src/components/finance/qingteng.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

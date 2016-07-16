@@ -1,0 +1,164 @@
+@import '.././mixins/common';
+/*
+*  主题颜色
+*/
+$color-main-1: #1991EB;
+$color-main-2: #2DA1F8;
+$color-main-3: #1EAAF1;
+
+/*
+* 文字颜色
+*/
+$color-text-1: #404040;
+$color-text-2: #606060;
+$color-text-3: #BFBFBF;
+
+
+/*
+* 边框颜色
+*/
+$color-border-1: #CED0DA;
+$color-border-2: #DFE3E9;
+
+/*
+* 按钮颜色
+*/
+$btn-bg-1: #5c96db;
+$btn-bg-2: #6d9ee1;
+
+/*
+* 表格行间颜色
+*/
+$table-line-1: #F2F4F7;
+
+/*
+* 阴影
+*/
+$color-shadow-1: rgba(0, 0, 0, 0.2);
+$color-shadow-1: rgba(0, 0, 0, 0.1);
+/*
+* 间距
+*/
+$spacing-1: 24px;
+$spacing-2: 16px;
+$spacing-3: 12px;
+
+$color-amount-add: #F5A623;
+$color-amount-sub: #FF3B30;
+
+.color-text-1 {
+	color: $color-text-1;
+}
+
+.color-text-2 {
+	color: $color-text-2;
+}
+
+.color-text-3 {
+	color: $color-text-3;
+}
+
+.amount-add {
+	color: $color-amount-add;
+}
+
+.amount-sub {
+	color: $color-amount-sub;
+}
+
+a {
+	color: $color-main-3;
+	&:hover,&:active,&:focus{
+		color: $color-main-1;
+	}
+}
+.table {
+	width: 100%;
+	background-color: #fff;
+	font-size: 14px;
+	margin-bottom: 0px;
+	border: 0px;
+	>thead {
+		background: -webkit-linear-gradient( #FFFFFF, #F2F4F7);
+		background: -moz-linear-gradient(#FFFFFF, #F2F4F7);
+		background: linear-gradient(#FFFFFF, #F2F4F7);
+		border: 1px solid #CED0DA;
+	}
+	>tbody {
+		border-bottom: 1px solid $color-border-2;
+	}
+	>tbody>tr {
+		&.odd {
+			background-color: $table-line-1;
+		}
+	}
+	>thead>tr>th>button {
+		display: inline-block;
+		background-color: transparent;
+		border: 0px;
+		&.sort {
+			position: relative; 
+			padding: 0px 16px 0px 0px;
+			background-position: right center;
+			background-image: url(../../img/icon/sort_1_1.png);
+			background-repeat: no-repeat;
+			@include bemM(desc) {
+				background-image: url(../../img/icon/sort_1_2.png);
+			}
+		}
+	}
+	thead>tr>th {
+		font-weight: 400;
+		border-bottom: 0px;
+		min-width: 80px;
+	}
+	tbody>tr>td{
+		border: 0px;
+	}
+}
+
+.btn-group {
+	.btn {
+		color: $color-text-1;
+		padding: 0px 12px;
+		line-height: 36px;
+		min-width: 84px;
+		border: 1px solid $color-border-1;
+		text-shadow: none;
+		box-shadow: none;
+		&:focus,&:active {
+			border: 1px solid $color-border-1;
+		}
+		&.active{
+			color: #fff;
+			background: -webkit-linear-gradient( #2da1f8, #1991eb);
+			background: -moz-linear-gradient(#2da1f8, #1991eb);
+			background: linear-gradient(#2da1f8, #1991eb);
+			border: 1px solid #1a91eb;
+		}
+		&:hover {
+			background-color: transparent;
+		}
+	}
+}
+.nav-tabs {
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 0px!important;
+	>li {
+		&.active {
+			>a,{
+				background-color: #79A8DF!important;
+				color: #fff!important;
+
+			}
+		}
+		>a {
+			padding: 0px;
+			line-height: 40px;
+			height: 40px;
+			padding: 0px 10px;
+			color: #404040;
+		}
+
+	}
+}
