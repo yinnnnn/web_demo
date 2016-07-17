@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="vue.js"></script>
+        <style >
+            .cls1{
+                font-size: 50px;
+            }
+            .cls2{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <h1 v-if="tif">Yes</h1>
+            <h1 v-else>No</h1>
+<!--多个一起用template抱起来-->
+            <template v-if="ok">
+                <h1>Title</h1>
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+            </template>
+            页面还是会展示
+                  <h1 v-show="tshow">Yes</h1>
+        </div>
+
+        <script >
+            var vm = new Vue({
+                el: '#app',
+                data: {
+                    cls1: 'cls1',
+                    cls2: 'cls2',
+                    tif: 1,
+                    ok:true,
+                    tshow:true
+                }
+            })
+
+        </script>
+    </body>
+
+</html>
