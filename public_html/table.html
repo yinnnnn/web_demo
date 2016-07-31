@@ -27,7 +27,12 @@ and open the template in the editor.
             </tbody>
         </table>
         <div id="app">
-            <pre>{{$data|json}}</pre>
+            <!--<pre>{{$data|json}}</pre>-->
+            <input type="checkbox" id="checkbox" v-model="checked">
+            <label for="checkbox">{{ checked }}</label>
+            <input v-model="age" lazy>
+            <!--change事件-->
+                    <pre>{{$data | json}}</pre>
         </div>
 
         <script >
@@ -46,6 +51,13 @@ new Vue({
         sortBy:function(k){
             this.sortKey = k;
         }
+    }
+});
+new Vue({
+    el:'#app',
+    data:{
+           checked:false,
+           age:10
     }
 })
         </script>
