@@ -1,0 +1,9 @@
+@mixin col-6 {
+    display:block;
+    float:left;
+}
+/*带参数，有默认值$width:40*/
+@mixin col($width){
+    width: $width;
+}
+

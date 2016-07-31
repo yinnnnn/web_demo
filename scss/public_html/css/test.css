@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*
+ *   与css不同import
+ *   1、放在代码最前面
+ *   2、对性能不利
+ *   合并输出
+    原生的import
+    1、以.css结尾
+    2、http://开头
+    3、url()
+    4、media queries
+*/
+/*带参数，有默认值$width:40*/
+/*默认属性*/
+/*@import "compass/reset";*/
+div {
+  display: fixed;
+  color: #1875e7;
+  width: 100px; }
+
+.main {
+  /*父类指针*/ }
+  .main .div {
+    font-family: Arial; }
+  .main:hover {
+    color: blue; }
+
+.main-sec {
+  font-family: Arial;
+  font-size: 5px; }
+
+p {
+  color: #8000ff; }
+
+.web-sec {
+  display: block;
+  float: left;
+  width: 35%; }
+
+.main-head {
+  color: #fff; }
+
+.main-detail {
+  color: red; }
+
+.err, .serious-err {
+  color: #f00; }
+
+.serious-err {
+  /*继承某个类*/
+  border: 1px; }
+
+/*
+函数： 
+1、跟代码无关的函数， 多是自己内置函数，称为functions
+2、可重用的代码块，称mixin
+    include方式调用 就是C语言里面的宏
+
+变量支持运算
+*/
+
+/*# sourceMappingURL=test.css.map */
