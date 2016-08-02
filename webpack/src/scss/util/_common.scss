@@ -1,0 +1,57 @@
+@import '.././mixins/common';
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", "San Francisco", "Helvetica Neue", Helvetica, STHeiTi, Roboto, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, Arial, sans-serif;
+  font-size: 14px;
+ 	color: #404040;
+}
+
+input,a,button {
+	outline: none;
+}
+body {
+	background-color: #EFF3F6;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	&:hover, &:visited, &:focus, &:active {
+		text-decoration: none;
+	}
+}
+
+h1,h2,h3,h4,h5,div,p,ul,li {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	list-style: none;
+}
+.text-align {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.content {
+	margin-top: 60px;
+	margin-left: 240px;
+	min-width: 960px;
+	overflow: auto;
+        //content--wrap
+	@include bemE(wrap) {
+		padding: 20px 16px;
+	}
+}
+
+
