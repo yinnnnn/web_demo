@@ -829,4 +829,13 @@ a {
   height: 6px;
   border-radius: 3px; }
 
+.btn-default-none1 {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px; }
+
+.dropdown-menu {
+  left: -66px;
+  width: 96px; }
+
 /*# sourceMappingURL=finance.css.map */

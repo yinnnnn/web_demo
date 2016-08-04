@@ -5,7 +5,7 @@ var config = require('./webpack-base.config')('dev')//指定输出目录
 
 var devip = require('dev-ip');
 var ip = devip();
-var host = ip[0] || 'localhost';
+var host =  'vernon.opweb.guosen.com.cn';
 var port = 80;
 
 for (var i = 0; i < config.entry.length; i++) {

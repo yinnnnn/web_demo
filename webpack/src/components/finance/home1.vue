@@ -41,19 +41,19 @@
                             业绩总分动态排行
                         </div>
                         <div class="right-text">
-                        <dropdown>
-                            <button type="button" class="btn btn-default" data-toggle="dropdown">
+                            <dropdown>
+                                <button type="button" class="btn-default-none" data-toggle="dropdown">
                                     <span class="dot"></span>
                                     <span class="dot"></span>
                                     <span class="dot"></span>
-                            </button>
-                            <ul slot="dropdown-menu" class="dropdown-menu">
-                                <li><a href="javascript:void(0);">个人</a></li>
-                                <li><a href="javascript:void(0);">团队</a></li>
-                                <li><a href="javascript:void(0);">部门</a></li>
-                            </ul>
-                        </dropdown>
-                            </div>
+                                </button>
+                                <ul slot="dropdown-menu" class="dropdown-menu">
+                                    <li><a href="javascript:void(0);">个人</a></li>
+                                    <li><a href="javascript:void(0);">团队</a></li>
+                                    <li><a href="javascript:void(0);">部门</a></li>
+                                </ul>
+                            </dropdown>
+                        </div>
                     </div>
                     <div class="chunk-content--body">
                         <table>
@@ -74,38 +74,15 @@
                                         <span class="status"></span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>2800</td>
-                                    <td>75%</td>
+                                <tr v-for="r in rankingList">
+                                    <td>{{r.name}}</td>
+                                    <td>{{r.score}}</td>
+                                    <td>{{r.rank}}%</td>
                                     <td>
                                         <span class="status"></span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>2800</td>
-                                    <td>75%</td>
-                                    <td>
-                                        <span class="status status__drop"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>2800</td>
-                                    <td>75%</td>
-                                    <td>
-                                        <span class="status"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>2800</td>
-                                    <td>75%</td>
-                                    <td>
-                                        <span class="status"></span>
-                                    </td>
-                                </tr>
+
                             </tbody>
                         </table>
                     </div>
@@ -148,20 +125,46 @@
                 </div>
             </div>
         </div>
+        <div></div>
 </template>
 <script>
-        import { select, option, dropdown } from 'vue-strap';
-     import pagination from '../common/pagination';
-     export default {
-             components: {
+    import { select, option, dropdown } from 'vue-strap';
+    import pagination from '../common/pagination';
+    import sendAjax from '../../js/common/request.js';
+    export default {
+        data: {
+            rankingList: [],
+        },
+        ready() {
+            this.getRanking();
+        },
+        components: {
             'v-select': select,
             'v-option': option,
             dropdown,
             pagination
+        },
+        methods: {
+            getRanking() {
+                sendAjax({
+                url: '/finc/statistic/ranking',
+                        type:'GET',
+                        data:{
+                        type:this.rankingType,
+                        },
+                        success(result){
+                            switch (result.code){
+                            case 0:
+                                    this.rankingList = result.data.total_score_list;
+                                    break;
+                            }
+                        }
+                });
+            }
         }
-     }
+    }
 </script>
- 
+
 <style>
 
 </style>

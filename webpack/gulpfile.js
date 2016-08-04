@@ -30,7 +30,7 @@ gulp.task('css', ['greet'], function () {});
 gulp.task('default', function () {});
 gulp.task('default', ['styles', 'jshint', 'watch']);
 
-var host =  'localhost';
+var host =  'vernon.opweb.guosen.com.cn';
 var port = 80;
 
 //启动服务
@@ -57,7 +57,7 @@ gulp.task('webpack:build',function(cb){
     var config = Object.create(buildConfig);
     webpack(config,function (err,stats) {
         if (err) throw new gutil.PluginError('webpack:build',err);
-        gutil.log('[webpack:build]',stats.toString({ colors : true }));
+//        gutil.log('[webpack:build]',stats.toString({ colors : true }));
         cb && cb();
     });
 });
