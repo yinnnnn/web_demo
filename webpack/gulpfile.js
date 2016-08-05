@@ -30,7 +30,7 @@ gulp.task('css', ['greet'], function () {});
 gulp.task('default', function () {});
 gulp.task('default', ['styles', 'jshint', 'watch']);
 
-var host =  'vernon.opweb.guosen.com.cn';
+var host =  'localhost';
 var port = 80;
 
 //启动服务

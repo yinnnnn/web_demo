@@ -150,7 +150,7 @@
 </template>
 
 <script>
-	import '../../scss/style.scss';
+	import '../../scss/util/style.scss';
 	export default {
 		props: {
 			menu: { 

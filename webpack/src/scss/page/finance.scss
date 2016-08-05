@@ -958,3 +958,35 @@
     left: -66px;
     width: 96px;
 }
+
+.nav-head{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;  
+    position:fixed;
+    top:0;
+    backgroud-color:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    color:#404040;
+    a{
+        color:#404040;
+    }
+    /*fl*/
+    .tital{
+        margin-left: 24px;
+        float:left;
+        font-size:20px;
+    }
+    .head-right{
+        font-size: 16px;
+        float:right;
+        .person{
+        display: inline-block;
+        margin-right: 24px;
+        }
+        .logout{
+         display: inline-block;
+         margin-right: 24px;
+        }
+    }
+}

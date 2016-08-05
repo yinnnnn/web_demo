@@ -838,4 +838,30 @@ a {
   left: -66px;
   width: 96px; }
 
+.nav-head {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  position: fixed;
+  top: 0;
+  backgroud-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: #404040;
+  /*fl*/ }
+  .nav-head a {
+    color: #404040; }
+  .nav-head .tital {
+    margin-left: 24px;
+    float: left;
+    font-size: 20px; }
+  .nav-head .head-right {
+    font-size: 16px;
+    float: right; }
+    .nav-head .head-right .person {
+      display: inline-block;
+      margin-right: 24px; }
+    .nav-head .head-right .logout {
+      display: inline-block;
+      margin-right: 24px; }
+
 /*# sourceMappingURL=finance.css.map */
