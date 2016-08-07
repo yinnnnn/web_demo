@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            青菜：<input type="text" v-model="v1"><br>
+            肉：<input type="text" v-model="v2"><br>
+            米：<input type="text" v-model="v3"><br>
+            总计：<input type="text" v-model="total"><br>
+        </div>
+        <script >
+            var vm = new Vue({
+                el:"#app",
+                data:{
+                    v1:'0',
+                    v2:'0',
+                    v3:'0'
+                },
+                computed:{
+                    total:function(){
+                        return parseInt(this.v1)+parseInt(this.v2)+parseInt(this.v3);
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
