@@ -20,7 +20,9 @@
 			</div>
 		</div>
 
+            <!-- 绑定 style -->
 		<div class="header--menu" :style="{display: isShowMenu?'block':'none'}">
+                     <!--使用空白来填充，这个很巧妙-->
 			<a href="javascript:void(0)" class="item item-green-1">人力</a>
 			<a href="javascript:void(0)" class="item item-green-2">机构</a>
 			<a href="javascript:void(0)" class="item item-default"></a>

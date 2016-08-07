@@ -1,14 +1,31 @@
 <template>
-	<aside class="sidebar">
-		<div class="sidebar">
-                    <a>
-                        <img src="/dist/img/sidebar_home_1.png" alt="" />
-                        <div>首页</div>
+	<aside class="sidebar1">
+		<div class="sidebar1">
+                    <!--type-home是因为字体大小不一样-->
+                    <a class="sidebar1--title type-home sidebar--selected">
+                        <span class="icon"></span>
+                        <div class="text">首页</div>
                     </a>
-                    <ul>
-                        <li>业绩查询</li> 
-                        <li>业绩日报</li>
-                        <li>业绩统计</li>
+                    <ul class="sidebar1--memu sidebar1--menu__open ">
+                        <li> 
+                            <a class="sidebar1--title type-finance-1">
+                                <div class="icon"></div>
+                                <div class="text">业绩查询</div>
+                                <div class="arrow"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar1--title sidebar1--memu--item">
+                                <div class="icon"></div>
+                                <div class="text">业绩日报</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar1--title sidebar1--memu--item">
+                                <div class="icon"></div>
+                                <div class="text">业绩统计</div>
+                            </a>
+                        </li>
                     </ul>
 		</div>
 
@@ -36,7 +53,7 @@
 			return  {
 				menuObj: {
 					selectedClass: 'selected',
-					openClass: 'sidebar--menu__open',
+					openClass: 'sidebar1--menu__open',
 					isHome: false,
 				}
 			}

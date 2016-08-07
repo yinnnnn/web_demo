@@ -4,145 +4,237 @@
 引用的图片不存在会报错
 */
 .sidebar {
-	position: fixed;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	width: 240px;
-	background-color: #005B82;
-	margin-top: 60px;
-	background: -webkit-linear-gradient(#1F2534, #363D4E); /* Safari 5.1 - 6.0 */
-  background: -moz-linear-gradient(#1F2534, #363D4E); /* Firefox 3.6 - 15 */
-  background: linear-gradient(#1F2534, #363D4E); /* 标准的语法 */
-  color: #fff;
-  a {
-  	color: #fff;
-  }
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 240px;
+    background-color: #005B82;
+    margin-top: 60px;
+    background: -webkit-linear-gradient(#1F2534, #363D4E); /* Safari 5.1 - 6.0 */
+    background: -moz-linear-gradient(#1F2534, #363D4E); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1F2534, #363D4E); /* 标准的语法 */
+    color: #fff;
+    a {
+        color: #fff;
+    }
 
-  @include bemE(selected) {
-  	background-color: rgba(0, 0, 0, 0.1);
-  	color: #fff!important;
-  	border-left: 3px solid #F3FEC0;
-  }
+    @include bemE(selected) {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: #fff!important;
+        border-left: 3px solid #F3FEC0;
+    }
 
-  @include bemE(title) {
-  	padding: 0px 24px;
-  	display: block;
-  	line-height: 40px;
-  	width: 100%;
-  	display: block;
-  	border-left: 3px solid transparent;
-  	background-repeat: no-repeat;
-  	&:hover {
-  		color: #fff;
-  	}
-		&.type-home {
-			font-size: 16px;
-  		border-left: 3px solid transparent;
-			&:hover,&.selected {
-				background-color: #B5BCCC;
-				color: #1F2534;
-				.icon {
-					background-image: url(../../img/icon/sidebar_home_2.png);
-				}
-			}
-			&.selected {
-				border-left: 3px solid #00AEEF;
-			}
-			.icon {
-				background-image: url(../../img/icon/sidebar_home_1.png);
-			}
-		}
-		&.type-finance-1 {
-			.icon {
-				background-image: url(../../img/icon/sidebar_finance_3_1.png);
-			}
-		}
+    @include bemE(title) {
+        padding: 0px 24px;
+        display: block;
+        line-height: 40px;
+        width: 100%;
+        display: block;
+        border-left: 3px solid transparent;
+        background-repeat: no-repeat;
+        &:hover {
+            color: #fff;
+        }
+        &.type-home {
+            font-size: 16px;
+            border-left: 3px solid transparent;
+            &:hover,&.selected {
+                background-color: #B5BCCC;
+                color: #1F2534;
+                .icon {
+                    background-image: url(../../img/icon/sidebar_home_2.png);
+                }
+            }
+            &.selected {
+                border-left: 3px solid #00AEEF;
+            }
+            .icon {
+                background-image: url(../../img/icon/sidebar_home_1.png);
+            }
+        }
+        &.type-finance-1 {
+            .icon {
+                background-image: url(../../img/icon/sidebar_finance_3_1.png);
+            }
+        }
 
-		&.type-finance-2 {
-			.icon {
-				background-image: url(../../img/icon/sidebar_finance_2_1.png);
-			}
-		}
+        &.type-finance-2 {
+            .icon {
+                background-image: url(../../img/icon/sidebar_finance_2_1.png);
+            }
+        }
 
-		&.type-finance-3 {
-			.icon {
-				background-image: url(../../img/icon/sidebar_finance_3_1.png);
-			}
-		}
+        &.type-finance-3 {
+            .icon {
+                background-image: url(../../img/icon/sidebar_finance_3_1.png);
+            }
+        }
 
-		.arrow {
-			width: 16px;
-			height: 16px;
-			background-size: 16px;
-			background-repeat: no-repeat;
-			background-image: url(../../img/icon/sidebar_arrow_1.png);
-			float: right;
-			margin-top: 12px;
-		}
-		.text {
-			text-indent: 6px;
-			display: inline-block;
-			vertical-align: middle;
-		}
-  	.icon {
-  		width: 24px;
-  		height: 24px;
-  		background-size: 24px;
-  		background-repeat: no-repeat;
-  		display: inline-block;
-  		vertical-align: middle;
-  	}
-  }
+        .arrow {
+            width: 16px;
+            height: 16px;
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-image: url(../../img/icon/sidebar_arrow_1.png);
+            float: right;
+            margin-top: 12px;
+        }
+        .text {
+            text-indent: 6px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
 
-  @include bemE(menu) {
-  	@include bemM(open) {
-  		.sidebar--menu--head {
-  			color: #fff;
-  		}
-  		.arrow {
-  			background-image: url(../../img/icon/sidebar_arrow_2.png);
-  		}
-  		.type-finance-1 {
-				.icon {
-					background-image: url(../../img/icon/sidebar_finance_3_1.png);
-				}
-			}
-			.type-finance-2 {
-				.icon {
-					background-image: url(../../img/icon/sidebar_finance_2_1.png);
-				}
-			}
-			.type-finance-3 {
-				.icon {
-					background-image: url(../../img/icon/sidebar_finance_3_1.png);
-				}
-			}
-			.sidebar--menu--item {
-				display: block;
-			}
-  	}
-  	.sidebar--head {
-  		font-size: 14px;
-  	}
-  	@include bemE(item) {
-  		line-height: 30px;
-  		font-size: 12px;
-  		padding: 0px 24px;
-  		text-indent: 33px;
-	  	width: 100%;
-	  	display: block;
-	  	border-left: 3px solid transparent;
-  		display: none;
-  		&:hover {
-	  		color: #1F2534;
-	  		background-color: #B5BCCC;
-	  	}
-  		&.selected {
-  			color: #1F2534;
-	  		background-color: #B5BCCC;
-	  		border-left: 3px solid #00AEEF;
-  		}
-  	}
-  }
+    @include bemE(menu) {
+        @include bemM(open) {
+            .sidebar--menu--head {
+                color: #fff;
+            }
+            .arrow {
+                background-image: url(../../img/icon/sidebar_arrow_2.png);
+            }
+            .type-finance-1 {
+                .icon {
+                    background-image: url(../../img/icon/sidebar_finance_3_1.png);
+                }
+            }
+            .type-finance-2 {
+                .icon {
+                    background-image: url(../../img/icon/sidebar_finance_2_1.png);
+                }
+            }
+            .type-finance-3 {
+                .icon {
+                    background-image: url(../../img/icon/sidebar_finance_3_1.png);
+                }
+            }
+            .sidebar--menu--item {
+                display: block;
+            }
+        }
+        .sidebar--head {
+            font-size: 14px;
+        }
+        @include bemE(item) {
+            line-height: 30px;
+            font-size: 12px;
+            padding: 0px 24px;
+            text-indent: 33px;
+            width: 100%;
+            display: block;
+            border-left: 3px solid transparent;
+            display: none;
+            &:hover {
+                color: #1F2534;
+                background-color: #B5BCCC;
+            }
+            &.selected {
+                color: #1F2534;
+                background-color: #B5BCCC;
+                border-left: 3px solid #00AEEF;
+            }
+        }
+    }
 }
+
+.sidebar1{
+    /*这个导航的样式*/
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 240px;
+    background-color: #005B82;
+    margin-top: 60px;
+    background: -webkit-linear-gradient(#1F2534, #363D4E); /* Safari 5.1 - 6.0 */
+    background: -moz-linear-gradient(#1F2534, #363D4E); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1F2534, #363D4E); /* 标准的语法 */
+    color: #fff;
+    a {
+        color: #fff;
+    }
+    /*首页title样式*/
+    .sidebar1--title{
+        padding: 0px 24px;
+        display: block;
+        line-height: 40px;
+        width: 100%;
+        display: block;
+        border-left: 3px solid transparent;
+        background-repeat: no-repeat;
+        /*hover效果，不用js实现*/
+        &:hover {
+            color: #fff;
+        }
+        &.type-home {
+            font-size: 16px;
+            border-left: 3px solid transparent;
+            &:hover,&.selected {
+                background-color: #B5BCCC;
+                color: #1F2534;
+                .icon {
+                    background-image: url(../../img/icon/sidebar_home_2.png);
+                }
+            }
+            &.selected {
+                border-left: 3px solid #00AEEF;
+            }
+            .icon {
+                background-image: url(../../img/icon/sidebar_home_1.png);
+            }
+        }
+        &.type-finance-1 {
+            .icon {
+                background-image: url(../../img/icon/sidebar_finance_3_1.png);
+            } 
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            /* 设置对齐方式 float left也可以，但是比较麻烦*/
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .arrow {
+            width: 16px;
+            height: 16px;
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-image: url(../../img/icon/sidebar_arrow_1.png);
+            float: right;
+            margin-top: 12px;
+        }
+        .text {
+            text-indent: 6px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    /*具体菜单导航样式*/
+    /*item内容*/
+    .sidebar1--memu--item {
+          text-indent: 33px;
+          line-height: 30px;
+          font-size: 12px;
+          &:hover{
+              color:#1F2534;
+              background-color: #B5BCCC;
+          }
+    }
+}
+
+
+
+

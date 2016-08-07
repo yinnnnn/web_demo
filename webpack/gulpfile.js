@@ -27,8 +27,8 @@ gulp.task("list",['minify','sss'])
 //依赖执行
 gulp.task('css', ['greet'], function () {});
 //默认
-gulp.task('default', function () {});
-gulp.task('default', ['styles', 'jshint', 'watch']);
+//gulp.task('default', function () {});
+//gulp.task('default', ['styles', 'jshint', 'watch']);
 
 var host =  'localhost';
 var port = 80;
@@ -97,3 +97,5 @@ gulp.task('copyJs', function() {
   .pipe(copy({ log: true }))
   .pipe(gulp.dest('./dist/js/vendor'))
 })
+
+gulp.task('default', ['server']);

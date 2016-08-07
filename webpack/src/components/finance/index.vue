@@ -10,8 +10,8 @@
 
 <script>
 	import financeMenu from '../../js/config/menu';
-	import header from '../common/header1.vue';
-	import sidebar from '../common/sidebar1.vue'; 
+	import header from '../common/header.vue';
+	import sidebar from '../common/sidebar1.vue';
 	export default {
 		data () {
 			let menu = JSON.parse(localStorage.getItem('menu'));
@@ -27,7 +27,7 @@
 		},
 		components: {
 			sidebar: sidebar,
-			pageHeader: header,
+			pageHeader: header, 
 		}
 	}
 </script>

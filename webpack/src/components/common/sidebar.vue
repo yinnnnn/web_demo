@@ -1,30 +1,11 @@
 <template>
 	<aside class="sidebar">
 
-		<!-- <div class="sidebar--options--head type-home">
-			<span class="icon"></span>
-			<span class="name">首页</span>
-		</div>
-
-		<div class="sidebar--options">
-
-			<div class="sidebar--options--head type-finance-1">
-				<div class="icon"></div>
-				<div class="name">业绩查询</div>
-				<div class="arrow"></div>
-			</div>
-
-			<div class="sidebar--options--item">
-				<span class="name">业绩日报</span>
-			</div>
-		</div> -->
-
 		<div class="sidebar">
 			<a @click="selectedHome" v-link="{'path': menuObj.homeLink}" class="sidebar--title type-home" :class="[menuObj.isHome ? menuObj.selectedClass: '']">
 				<div class="icon"></div>
 				<div class="text">首页</div>
 			</a>
-
 			<ul v-for="item in menuObj.tree" class="sidebar--menu" :class="[item.isOpen?menuObj.openClass:'']">
 				<li>
 					<a class="sidebar--title sidebar--menu--head" :class="['sidebar--title', item.titleClass]" @click="openMenu(item)">
@@ -43,7 +24,7 @@
 			</ul>
 		</div>
 
-		<!-- <div class="sidebar">
+		 <div class="sidebar">
 			<a class="sidebar--title type-home sidebar--selected">
 				<div class="icon"></div>
 				<div class="text">首页</div>
@@ -143,7 +124,7 @@
 
 			</ul>
 
-		</div> -->
+		</div> 
 
 	</aside>
 
