@@ -21,30 +21,21 @@ and open the template in the editor.
     </head>
     <body>
         <div id="app">
-            <h1 v-if="tif">Yes</h1>
-            <h1 v-else>No</h1>
-<!--多个一起用template抱起来-->
-            <template v-if="ok">
-                <h1>Title</h1>
-                <p>Paragraph 1</p>
-                <p>Paragraph 2</p>
-            </template>
-            页面还是会展示
-                  <h1 v-show="tshow">Yes</h1>
+            <!--和直接data赋值没有区别-->
+            <div class='{{cls1}}'>第一行</div>
+            <div v-bind:class='cls2'>第二行</div>
+            <!--不允许混用-->
+            <!--<div class='{{cls1}}' v-bind:class='cls2'>第三行</div>-->
         </div>
 
         <script >
             var vm = new Vue({
                 el: '#app',
                 data: {
-                    cls1: 'cls1',
-                    cls2: 'cls2',
-                    tif: 1,
-                    ok:true,
-                    tshow:true
+                    cls1:'cls1',
+                    cls2:'cls2'
                 }
             })
-
         </script>
     </body>
 

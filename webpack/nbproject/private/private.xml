@@ -3,14 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/老公的/source/web_demo/webpack/src/components/common/sidebar1.vue</file>
-            <file>file:/D:/老公的/source/web_demo/webpack/src/scss/include/_sidebar1.scss</file>
-            <file>file:/D:/老公的/source/web_demo/webpack/src/components/common/sidebar.vue</file>
-            <file>file:/D:/老公的/source/web_demo/webpack/src/scss/mixins/_mixin.scss</file>
             <file>file:/D:/老公的/source/web_demo/webpack/src/scss/page/finance.scss</file>
-            <file>file:/D:/老公的/source/web_demo/webpack/src/components/finance/index.vue</file>
-            <file>file:/D:/老公的/source/web_demo/webpack/src/components/common/header.vue</file>
+            <file>file:/D:/老公的/source/web_demo/webpack/src/js/config/router-finance.js</file>
+            <file>file:/D:/老公的/source/web_demo/webpack/src/components/finance/home2.vue</file>
             <file>file:/D:/老公的/source/web_demo/webpack/src/components/finance/home1.vue</file>
+            <file>file:/D:/老公的/source/web_demo/webpack/src/scss/page/finance_1.scss</file>
         </group>
     </open-files>
 </project-private>

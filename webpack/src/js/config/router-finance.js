@@ -11,6 +11,11 @@ const config = {
 			require(['../../components/finance/home1.vue'], resolve);
 		},
 	},
+        '/home2': {
+		component:  (resolve) => {
+			require(['../../components/finance/home2.vue'], resolve);
+		},
+	},
 	'/results/report': {
 		name: 'report-home',
 		component:  (resolve) => {

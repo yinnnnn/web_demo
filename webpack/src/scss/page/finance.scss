@@ -1,6 +1,42 @@
 @import '.././mixins/common';
 @import '.././include/theme-finance';
 
+.a1{
+    /*border: 1px solid red;*/
+    padding-top: 10px;
+    .item{
+        border: 1px solid yellow;    
+        height: 144px;
+        line-height: 144px;
+        font-size: 24px;
+        border-radius: 6px;
+        color: #fff;
+        text-align: center;
+        display: block;//把link变成block可以设置大小宽度
+    }
+    .a11{ padding: 0 16px 16px 0;
+        .item{
+            background-color: #358ed7;
+        }
+    }
+    .a12{ padding: 0 16px 16px 0;
+        .item{
+            background-color: #838cc7;
+        }
+    } 
+    .a21{ padding: 0 16px 16px 0;
+        .item{
+            background-color: #53bbb3;
+        }
+    }
+    .a22{ padding: 0 16px 16px 0;
+        .item{
+            background-color: #39accf;
+        }
+    }
+}
+
+
 .crumb-container {
 	border-bottom: 1px solid #CCD3DB;
 	padding: 0px 0px 8px 16px;

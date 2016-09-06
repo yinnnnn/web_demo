@@ -1,3 +1,5 @@
 /nbproject/private/
 /webpack/node_modules/*
 /webpack/dist/*
+/src/nbproject/private/
+/vuejs/nbproject/private/
