@@ -17,12 +17,28 @@ and open the template in the editor.
             .cls2{
                 color:red;
             }
+            /* 必需 */
+.expand-transition {
+  transition: all .3s ease;
+  height: 30px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+/* .expand-enter 定义进入的开始状态 */
+/* .expand-leave 定义离开的结束状态 */
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
         </style>
     </head>
     <body>
         <div id="app">
-            <h1 v-if="tif">Yes</h1>
-            <!--<h1 v-else>No</h1>-->
+            <h1 v-if="tif" transition="expand">Yes</h1>
+            <h1 v-else>No</h1>
             <!--多个一起用template抱起来-->
             <template v-if="ok">
                 <h1>Title</h1>
@@ -42,12 +58,13 @@ and open the template in the editor.
                     cls2: 'cls2',
                     tif: 0,
                     ok:true,
-                    tshow:true
+                    tshow:true,
+//                    transitionName: 'expand'
                 },
                 methods: {
                     greet: function () {
                         this.tif = !this.tif;
-                        this.tshow=!this.tshow;
+//                        this.tshow=!this.tshow;
                     }
                 }
             })
