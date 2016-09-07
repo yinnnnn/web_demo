@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="vue.js"></script>
+       <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+        <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+	<style>
+		button{
+			/*隐藏按钮效果 变成一个button a*/
+			background-color: transparent;
+			border: 0;
+			/*点击后没有印*/
+			outline: none;
+		}
+		.left-container{
+			height: 4px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			background: -webkit-linear-gradient(left,#6ed6ff,#0070dc);
+		}
+		.btn-new{
+			/*设置了这个，子元素absolute就是相对这个的了。*/
+			position: relative;
+			padding: 0px;
+			/*把条形变成只在边框内*/
+			display: inline-block;
+		}
+	</style>
+    <body>
+        <div id="example">
+            <!--组件标签-->
+			<div class="" v-on:click="click1">
+				<input v-model="isShowOne" type="checkbox" /> 打开在同一时间只显示一个
+            </div>
+			<div class="btn-new">
+				<div class="left-container"></div>
+				<button class="btn-open" @click="click1">新增业绩</button>
+			</div>
+			<!--style设置样式，可以支持表达式-->
+			<table id="demo" :style="{display: isShowOne ? '': 'none' }" class="table">
+            <thead>
+            <tr>
+                <th v-on:click="sortBy('name')">Name</th>
+                <th v-on:click="sortBy('age')">Age</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr v-for="a in names | orderBy sortKey"> <td>{{a.name}}</td>
+            <td>{{a.age}}</td></tr>
+            </tbody>
+        </table>
+        </div>
+		<!--怎么实现动态加载-->
+		<div class="btn-group">
+			<button type="button" class="btn btn-default">Left</button>
+			<button type="button" class="btn btn-default">Middle</button>
+			<button type="button" class="btn btn-default">Right</button>
+		</div>
+		<div>00</div>000000000
+        <script >
+			var vm = new Vue({
+                el: '#example',
+                data: {
+                    isShowOne: true,
+                },
+				watch: {
+					'isShowOne': function (val, oldVal) {
+					  console.log('new: %s, old: %s', val, oldVal)
+					}
+				},
+				methods:{
+					click1 :function(){
+						this.isShowOne=!this.isShowOne;
+					}
+				}
+            })
+
+        </script>
+    </body>
+
+</html>

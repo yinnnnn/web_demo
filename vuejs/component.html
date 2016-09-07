@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="vue.js"></script>
+
+    </head>
+    <body>
+        <div id="example">
+            <!--组件标签-->
+            <my-component></my-component>
+        </div>
+        <script >
+//            组件其实就是自定义标签了
+            // 定义
+            var MyComponent = Vue.extend({
+                template: '<div>A custom component!</div>'
+            })
+            // 注册
+            Vue.component('my-component', MyComponent)
+            // 创建根实例
+            new Vue({
+                el: '#example'
+            })
+        </script>
+    </body>
+
+</html>
