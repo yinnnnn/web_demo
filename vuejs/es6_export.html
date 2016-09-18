@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>TODO supply a title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <!--<script src="export.js"></script>-->  
+		  <script src="vue.js"></script>
+		  	  <script src="./index.js"></script>
+	</head>
+	<body>
+		<div id="example">TODO write content
+		
+			<button @click="click1">xxxx</button>
+		</div>
+	
+		<script >
+			
+			var vm = new Vue({
+                el: '#example',
+                data: {
+                    isShowOne: true,
+                },
+				watch: {
+					'isShowOne': function (val, oldVal) {
+					  console.log('new: %s, old: %s', val, oldVal)
+					}
+				},
+				methods:{
+					click1 :function(){
+						alert(str)
+					}
+				}
+            })
+        </script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div id="app">
+            <h1 >{{message}}</h1> <!-- 等价于    <span v-text="message"></span> -->
+            <!-- debounce 延时-->
+            <!--v-model 实现双向绑定-->
+            <input type="text" v-model="message" number debounce="500">
+            <!--调用方法-->
+            <button v-on:click="reverseMessage">Reverse Message</button>
+            <ul>
+                <!--1.0循环 和php相反-->
+                <li v-for="value in names">{{value.a}}</li>
+            </ul>
+            <pre>{{$data|json}}</pre>
+        </div>
+
+        <script>
+			console.log("module init...");
+            // 函数定义方式
+			var serial_maker = function(){
+				var prefix = '';
+				var seq = 0;
+				return {
+					set_prefix:function(pre){
+						prefix = pre;
+						return this;//可以级联调用....
+					},
+					set_seq:function(s){
+						seq = s;
+						return this;
+					},
+					gensym:function(){
+						var result = prefix + seq;
+						seq += 1;
+						return result;
+					}
+				}
+			};
+			// 这个就等于闭包，直接调用实例化了一个对象
+			var seqer = serial_maker();
+			seqer.set_prefix("F");
+			seqer.set_seq(10000).set_prefix("G");
+			console.log("module call:"+seqer.gensym());
+				console.log("module call:"+seqer.gensym());
+        </script>
+    </body>
+
+</html>

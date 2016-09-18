@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div id="app">
+            <h1 >{{message}}</h1> <!-- 等价于    <span v-text="message"></span> -->
+            <!-- debounce 延时-->
+            <!--v-model 实现双向绑定-->
+            <input type="text" v-model="message" number debounce="500">
+            <!--调用方法-->
+            <button v-on:click="reverseMessage">Reverse Message</button>
+            <ul>
+                <!--1.0循环 和php相反-->
+                <li v-for="value in names">{{value.a}}</li>
+            </ul>
+            <pre>{{$data|json}}</pre>
+        </div>
+
+        <script >
+			//  Number对象、String对象
+			//	原型对象:就是所有对象的基类
+			if(typeof Object.beget !== 'function'){
+				Object.create = function(o){
+					var F = function(){
+						console.log("Object create function here.")
+					};
+					F.prototype = o;
+					return new F();
+				}
+			}
+			var ob = {
+				name:"Lucy",
+				number:845,
+			}
+//			ob.beget();
+			console.log(ob.name );
+//			默认值
+			console.log(ob.namee || "default" );
+			console.log(ob.namee && ob.namee.second);
+			
+			
+//			对象都是引用，那如果要复制一个呢,如何比较呢
+//			对象复制那么复杂?http://blog.csdn.net/u013291076/article/details/45094779
+			ob2 = ob;
+			ob2.name="Ob2 name"
+			console.log("ob name:"+ob.name)
+			console.log("ob == ob2 ?"+(ob === ob2))
+			var a1= 10;
+			var a2 = a1;
+			a2=20;
+			console.log(a1)
+			
+//			原型对象:就是所有对象的基类
+			if(typeof Object.beget !== 'function'){
+				Object.create = function(o){
+					var F = function(){console.log("Object create function here.")};
+					F.prototype = o;
+					return new F();
+				}
+			}
+			
+			console.log("my object start....");
+			var myObject = {
+				value:0,
+				increment:function(inc){
+					this.value = typeof inc === 'number' ? inc : 1;
+				}
+			}
+			myObject.increment(10);
+			// 为了不让成员变量不被改变！！！！所以采用闭包
+			myObject.value = 1999;
+			console.log("myObject value:"+myObject.value);
+			
+			// 闭包
+			console.log("Closure object start....");
+			var cloObject = (function(){
+				var value = 0;
+				return {
+					increment:function(inc){
+						value += typeof inc === 'number' ? inc : 1;
+					},
+					getValue:function(){
+						return value;
+					}
+				};
+			}());
+			cloObject.increment(222);
+			console.log("closure value:"+cloObject.getValue());
+        </script>
+    </body>
+
+</html>

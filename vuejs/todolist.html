@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+http://www.imooc.com/video/12304
+-->
+<html>
+	<head>
+		<title>TODO list</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		      <script src="vue.js"></script>
+       <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+        <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="example">
+			<input type="text" v-model="itext" @keyup.enter="onEnter">
+			<li v-for="item in items">
+				<ul>{{item.cont}}</ul>
+			</li>
+		</div>
+		<script>
+			vm = new Vue({
+				el:"#example",
+				data:{
+					itext:'',
+					items:[
+						{
+							cont:"hello",
+							isFinish:true,
+						},
+						{
+							cont:"hello2",
+							isFinish:true,
+						}
+					]
+				},
+				methods:{
+					onEnter:function(){
+						this.items.push({
+							"cont" : this.itext,
+							"isFinish" :false
+						});
+						this.itext = '';
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div id="app">
+            <h1 >{{message}}</h1> <!-- 等价于    <span v-text="message"></span> -->
+            <!-- debounce 延时-->
+            <!--v-model 实现双向绑定-->
+            <input type="text" v-model="message" number debounce="500">
+            <!--调用方法-->
+            <button v-on:click="reverseMessage">Reverse Message</button>
+            <ul>
+                <!--1.0循环 和php相反-->
+                <li v-for="value in names">{{value.a}}</li>
+            </ul>
+            <pre>{{$data|json}}</pre>
+        </div>
+
+        <script>
+            // 函数定义方式
+			// 
+			// 为什么这里用this，闭包就不用this呢
+			// reason:
+			// this就相当于public变量
+			// 没有this就是private的，外部不可见
+            var Quo = function (string) {
+                console.log("Quo log here")
+                this.status = string;
+            };
+            Quo.prototype.get_status = function () {
+                return this.status;
+            }
+			// 两种调用方式，直接调用
+			// new 的方式直接返回一个对象
+			// this保持内部的属性字段
+            Quo();
+            var myQuo = new Quo("Hello ");
+            document.writeln(myQuo.get_status());
+			
+			var ob = {
+				name:"Lucy",
+				number:845,
+			}
+
+            Function.prototype.method = function (name, func) {
+                this.prototype[name] = func;
+                return this;
+            }
+
+            Number.method("integer", function () {
+                return Math[this < 0 ? 'ceil' : 'floor'](this);
+            });
+            console.log((-10 / 3).integer());
+            var a = 10 / 2;
+        </script>
+    </body>
+
+</html>
