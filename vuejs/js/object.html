@@ -94,8 +94,18 @@ and open the template in the editor.
 					}
 				};
 			}());
+			//直接使用，不用new
 			cloObject.increment(222);
 			console.log("closure value:"+cloObject.getValue());
+			
+			function Person(name){
+				var name2 = name;
+				this.hello = function(){
+					console.log("sss"+name3);
+				}
+			}
+			var p1 = new Person("vernon");
+			p1.hello();
         </script>
     </body>
 
