@@ -13,6 +13,7 @@ and open the template in the editor.
 	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 	<script src="./vue.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/book.css">
 	<style type="text/css">
 
 	</style>
@@ -26,7 +27,15 @@ and open the template in the editor.
 	</ul>
 
 	<div id="app">
-		<div class="table-responsive">
+		<div v-for="item in book_list" track-by="$index">
+			<div class="row">
+				<div class="col-xs-3 cover">
+				<img src="./book.jpg">
+				</div>
+				<div class="col-xs-9"><a href="{{item.url}}"/>{{item.name}}</a></div>
+			</div>
+		</div>
+		<!-- <div class="table-responsive">
 			<table class="table table-bordered table-striped ">
 				<tr>
 					<th></th>
@@ -38,9 +47,8 @@ and open the template in the editor.
 
 				</tr>
 			</table>
-		</div>
+		</div> -->
 	</div>
 	<script src="./book.js"></script>
 </body>
 </html>
-       
