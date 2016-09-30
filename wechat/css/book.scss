@@ -1,10 +1,69 @@
-
+*{
+	margin:0px;
+	padding:0px;
+}
 .cover{
 	img{
-		width: 80px;
-		 overflow: hidden;
+		// width: 80px;
+		height: 100px;
+		overflow: hidden;
 	}
 }
+ul,ol,li{
+	list-style:none outside none;
+	float:left;
+}
 .row{
-	margin:10px 0 0 20px;
+	clear:both;
+	// margin:10px 0 0 20px ; 
+}
+// id选择器不生效
+.content{
+	clear:both;
+	margin-top:40px;
+}
+.list{
+	a{
+		display: -webkit-box;
+		text-decoration:none;
+		color: #404040;
+	}
+	.list-right{
+		display: inline-block ; 
+		border-bottom: 1px solid #e3e5e9;
+		height: 110px;
+		padding-left: 25px;
+		.book-price{
+			color:#f23030;
+			font-size: 16px;
+		}
+		.book-name{
+			// line-height: 35px;
+			font-size: 15px;
+			color: #232326;
+		}
+	}
+
+}
+
+.head{
+	// margin:6px 10px;
+	width:100%;
+	background-color: #fff;
+	position:fixed;
+	z-index:999;
+	top:0;
+	border-bottom: 1px solid #e3e5e9;
+	.item{
+		display: inline-block;
+		padding:2px 15px;
+		margin:8px 10px;
+		span{
+			display: block;
+		}
+		background-color: #f0f0f0;
+	}
+	li{
+		margin: 2px 5px;
+	}
 }

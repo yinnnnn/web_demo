@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -8,7 +8,7 @@ and open the template in the editor.
 <head>
 	<title>图书列表</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
 	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -20,34 +20,43 @@ and open the template in the editor.
 </head>
 <body>
 	<!-- 标题切换 -->
-	<ul class="nav nav-pills nav-justified" role="tablist">
+<!-- 	<ul class="nav nav-pills" role="tablist">
 		<li role="presentation" class="active"><a href="#">C++</a></li> 
 		<li role="presentation"><a href="#">前端</a></li> 
 		<li role="presentation"><a href="#">后台</a></li>
-	</ul>
+	</ul> -->
+
+	<!-- 善用ul li
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul> -->
 
 	<div id="app">
+		<ul class="head">
+		<li class="item" @click="change1(1)"><span>C++</span></li>
+		<li class="item" @click="change1(2)"><span>前端</span></li>
+		<li class="item" @click="change1(3)"><span>后台</span></li>
+		<li class="item" @click="change1(4)"><span>Linux</span></li>
+		<!-- <div class="item">MySQL</div> -->
+	</ul>
+	<div class="content">
 		<div v-for="item in book_list" track-by="$index">
-			<div class="row">
+			<div class="row list">
+			<!-- 链接不用单独加 -->
+				<a href="{{item.url}}"/>
 				<div class="col-xs-3 cover">
 				<img src="./book.jpg">
 				</div>
-				<div class="col-xs-9"><a href="{{item.url}}"/>{{item.name}}</a></div>
+				<div class="col-xs-9 list-right">
+					<div class="book-name">{{item.name}}</div>
+					<div class="book-price"><em>¥46.00</em></div>
+				</div>
+				</a>
 			</div>
 		</div>
-		<!-- <div class="table-responsive">
-			<table class="table table-bordered table-striped ">
-				<tr>
-					<th></th>
-					<th>书名</th>
-				</tr>
-				<tr v-for="item in book_list" track-by="$index">
-					<th>{{$index+1}}</th>
-					<th><a href="{{item.url}}"/>{{item.name}}</a></th>
-
-				</tr>
-			</table>
-		</div> -->
+	</div>
 	</div>
 	<script src="./book.js"></script>
 </body>
