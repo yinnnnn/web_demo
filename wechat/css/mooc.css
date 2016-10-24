@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.top {
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  color: #fff;
+  background: #555;
+  border-bottom: 1px #ecc000 solid; }
+  .top .tel {
+    float: left; }
+  .top ul {
+    text-align: right; }
+    .top ul li {
+      display: inline-block; }
+      .top ul li a {
+        display: inline-block;
+        padding: 0 3px;
+        color: #fff; }
+
+/*# sourceMappingURL=mooc.css.map */

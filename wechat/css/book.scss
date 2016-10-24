@@ -3,10 +3,21 @@
 	padding:0px;
 }
 .cover{
+	
+	// width: 80px;
+	height: 100px;
+	// 图片对齐
+	text-align: center;
+	width:120px;
+	overflow: hidden;
+	margin-left:10px;
+
 	img{
 		// width: 80px;
 		height: 100px;
-		overflow: hidden;
+		max-width: 100px;
+		width: auto;
+		vertical-align:middle;
 	}
 }
 ul,ol,li{
@@ -32,15 +43,23 @@ ul,ol,li{
 		display: inline-block ; 
 		border-bottom: 1px solid #e3e5e9;
 		height: 110px;
-		padding-left: 25px;
+		padding-left: 0px;
+		padding-top: 5px;
 		.book-price{
 			color:#f23030;
 			font-size: 16px;
+
+			position: absolute;
+			bottom: 10px;
+			// margin-top:20px;
+			// 不生效问题https://segmentfault.com/q/1010000002788176
+			// margin-left: 10px;
 		}
 		.book-name{
 			// line-height: 35px;
 			font-size: 15px;
 			color: #232326;
+
 		}
 	}
 

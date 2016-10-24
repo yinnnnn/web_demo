@@ -46,12 +46,12 @@ and open the template in the editor.
 			<div class="row list">
 			<!-- 链接不用单独加 -->
 				<a href="{{item.url}}"/>
-				<div class="col-xs-3 cover">
-				<img src="./book.jpg">
+				<div class="col-xs-4 cover">
+				<img src="{{item.cover}}">
 				</div>
-				<div class="col-xs-9 list-right">
-					<div class="book-name">{{item.name}}</div>
-					<div class="book-price"><em>¥46.00</em></div>
+				<div class="col-xs-8 list-right">
+					<div class="book-name"><span>{{item.name}}</span></div>
+					<div class="book-price"><span>京东价：<em>¥{{item.price}}</span></em></div>
 				</div>
 				</a>
 			</div>

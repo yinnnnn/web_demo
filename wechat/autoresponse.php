@@ -10,11 +10,11 @@ if (!$link) {
 mysqli_select_db($link, "wechat");
 mysqli_query($link,"set names utf8");
 
-$sql = "select * from wechat.t_book limit 3 ";
+$sql = "select * from wechat.t_book ";
 $result = mysqli_query($link, $sql);
 $arr = [];
 while ($row = mysqli_fetch_array($result)) {
-	$arr[] = ["name"=>$row['book_name'],'url'=>$row['book_url']];
+	$arr[] = ["name"=>$row['book_name'],'url'=>$row['book_url'],'cover'=>$row['book_cover'],'price'=>$row['price']];
 }
 echo json_encode($arr);
 

@@ -1,13 +1,20 @@
 <?php
+include 'ganon.php';
+$html = file_get_dom("http://item.m.jd.com/product/10875285.html");
 
-$str  = '<xml>
-<ToUserName><![CDATA[toUser]]></ToUserName>
-<FromUserName><![CDATA[fromUser]]></FromUserName>
-<CreateTime>12345678</CreateTime>
-<MsgType><![CDATA[text]]></MsgType>
-<Content><![CDATA[你好]]></Content>
-</xml>';
+	$pic = [];
+	// $price = '';
+	foreach ($html('span[class="big-price"]') as $element) {
 
-$obj= simplexml_load_string($str);
+		$price = ($element->getInnerText());
+	}
+	foreach ($html('span[class="small-price"]') as $element) {
 
-var_dump($obj);
+		$price .= ($element->getInnerText());
+	}
+	var_dump($price);
+	foreach ($html('img[class="J_ping"]') as $element) {
+
+		$pic[] = 'http:'.trim($element->attributes['src']);
+	}
+	var_dump($pic);

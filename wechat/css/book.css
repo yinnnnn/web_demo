@@ -2,9 +2,17 @@
   margin: 0px;
   padding: 0px; }
 
-.cover img {
+.cover {
   height: 100px;
-  overflow: hidden; }
+  text-align: center;
+  width: 120px;
+  overflow: hidden;
+  margin-left: 10px; }
+  .cover img {
+    height: 100px;
+    max-width: 100px;
+    width: auto;
+    vertical-align: middle; }
 
 ul, ol, li {
   list-style: none outside none;
@@ -25,10 +33,13 @@ ul, ol, li {
   display: inline-block;
   border-bottom: 1px solid #e3e5e9;
   height: 110px;
-  padding-left: 25px; }
+  padding-left: 0px;
+  padding-top: 5px; }
   .list .list-right .book-price {
     color: #f23030;
-    font-size: 16px; }
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px; }
   .list .list-right .book-name {
     font-size: 15px;
     color: #232326; }

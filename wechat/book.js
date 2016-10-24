@@ -30,14 +30,14 @@ var vm = new Vue({
 	},
 	created: function () {
 		var _self = this;
-		// $.ajax({
-		// 	url: "http://120.25.78.52/wechat/autoresponse.php",
-		// 	async:false,
-		// 	dataType: 'json',
-		// 	type: 'GET',
-		// 	success: function (res) {
-		// 		_self.book_list = res; 
-		// 	}
-		// });
+		$.ajax({
+			url: "http://120.25.78.52/wechat/autoresponse.php",
+			async:false,
+			dataType: 'json',
+			type: 'GET',
+			success: function (res) {
+				_self.book_list = res; 
+			}
+		});
 	}
 })
