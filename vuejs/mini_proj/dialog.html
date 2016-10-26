@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--
+  
+
+  1. 善用圆角    border-radius:  4px;
+  2. 弹层就是用一个绝对定位的div加背景颜色
+  3. v-show控制显示和隐藏
+  4.  display: inline-block; 不会继承，默认都是block
+
+-->
+<html>
+<head>
+  <title>目录</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="../comm/vue.js"></script>
+  <style>
+    *{
+      text-align: center;
+      font-family: system,-apple-system,\.SFNSDisplay-Regular,San Francisco,Helvetica Neue,Helvetica,STHeiTi,Roboto,Hiragino Sans GB,STHeiti,Microsoft YaHei,WenQuanYi Micro Hei,SimSun,Arial,sans-serif;
+      padding: 0px;
+      margin: 0px;
+    }
+    body{
+      background-color: #F2F2F2;
+    }
+    .div1{
+     position: fixed;
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     bottom: 0px;
+     z-index: 999;
+     background-color: rgba(0,0,0,0.5);
+     font-size: 16px;
+     /*display: none;*/
+   }
+   .container{
+    position: relative;
+    width: 325px;
+    height: 325px;
+    background-color: #fff;
+    margin: 100px auto;
+    background-color: white;
+    border-radius:  4px;
+    padding: 24px 0;
+  }
+
+  .close1{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+  .qrcode{
+    display: inline-block;
+    border: 1px solid #dce1ea;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f0f3f8;
+  }
+  .bg{
+    background: #fff;
+    padding: 10px;
+  }
+  .desc{
+    margin-top: 16px;
+  }
+  button{
+    color: #fff;
+    font-size: 18px;
+    width: 177px;
+    height: 60px;
+    background-color: #14a1e9;
+    border: 1px solid #1080b8;
+    border-radius: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-top: 50px;
+    display: inline-block;
+  }
+
+
+  /*-------------分割线-------------*/
+  .mid-desc{
+    background: url("../img/home_head_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    /*height: 537px;    */
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .span1{
+    display: block;
+    font-size: 36px;
+    text-align: left;
+    color: #fff;
+    /*display: inline-block;*/
+  }
+  .mid-desc button{
+    /*text-align: left;*/
+  }
+  .mid-content{
+    /*margin-left: 200px;*/
+    text-align: left;
+    display: inline-block;
+    margin-top: 60px;
+  }
+  .iphone{
+    display: inline-block;
+    margin-left: 100px;
+  }
+  .iphone img{
+    margin-top: -100px;
+  }
+  .span2{
+    display: block;
+    text-align: left;
+    color: #fff;
+    font-size:24px;
+    opacity: 0.7;
+  }
+
+  .item{
+    display: inline-block;
+    width: 360px;
+    height: 400px;
+    border-radius: 5px;
+    background-color: #39add1;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.12);
+    margin-left: 20px;
+  }
+  .enter{
+    text-align: left;
+    background-color: #fff;
+        /*border-radius: 5px;*/
+    font-size: 18px;
+    height:60px;
+    line-height:60px;
+  }
+  .item-main{
+
+  }
+</style>
+</head>
+<body>
+<div id="app">
+    <div class="mid-desc">
+      <div class="mid-content">
+        <span class="span1">泰九运筹手机客户端</span>
+        <span class="span2">让您轻松享受移动互联网时代的办公体验</span>
+        <button v-on:click="reverseMessage"> 立刻下载</button>
+      </div>
+      <div class="iphone">
+        <img src="../img/iphone.png" />
+      </div>
+    </div>
+    <div class="item item1">
+      <div class="enter">进入</div>
+      <div class="item-main">
+        <div class="name">经营分析</div>
+        <div class="eng">Business analysis</div>
+        <img src="../img/icon1.png">
+      </div>
+      
+    </div>
+    <div class="item item2">
+      <div class="enter">进入</div>
+      <div class="item-main">
+        <div class="name">经营分析</div>
+        <div class="eng">Business analysis</div>
+        <img src="../img/icon2.png">
+      </div>
+    </div>
+    <div class="item item3">
+      <div class="enter">进入</div>
+      <div class="item-main">
+        <div class="name">经营分析</div>
+        <div class="eng">Business analysis</div>
+        <img src="../img/icon3.png">
+      </div>
+    </div>
+
+    <!-- 弹窗 -->
+    <div class="div1" v-show="isShow" id="modal-qrcode" v-on:click="clkClose">
+      <div class="container" > 
+        <div class="close1" @click="isShow = false">
+          <img src="../img/close.png" />
+        </div>
+        <div class="qrcode">
+          <div class="bg">
+            <div class="download">
+             <img src="../img/qrcode.png" />
+           </div>
+         </div>
+       </div>
+       <div class="desc">微信扫码获取下载链接</div>
+     </div>
+   </div>
+ </div>
+ <script >
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      isShow:false
+    },
+    methods: {
+      reverseMessage: function () {
+        this.isShow = !this.isShow;
+        console.log(this.isShow);
+      },
+      clkClose: function (e) {
+        if (e.target === document.getElementById('modal-qrcode')) {
+          this.isShow = false;
+        }
+        console.log(e);
+      }
+    }
+  })
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>职能充电宝</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+        <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../scss/officialaccount.css" rel="stylesheet">
+		<script src="../comm/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="header">
+				<img class="img1" ng-src="http://sortime.img-cn-hangzhou.aliyuncs.com/b3BwS0JqallvdVAyczdZOXJPY2JuQXBKMXlkRQ==/IypbgGOR9lYEe8WYEVhQVPTeGeRXkuvmuXnnEJfG1458532392/5xP481458532498833.jpg@!logo" src="http://sortime.img-cn-hangzhou.aliyuncs.com/b3BwS0JqallvdVAyczdZOXJPY2JuQXBKMXlkRQ==/IypbgGOR9lYEe8WYEVhQVPTeGeRXkuvmuXnnEJfG1458532392/5xP481458532498833.jpg@!logo">
+				<div class="avatar">
+					<img ng-src="http://sortime.img-cn-hangzhou.aliyuncs.com/b3BwS0JqallvdVAyczdZOXJPY2JuQXBKMXlkRQ==/IypbgGOR9lYEe8WYEVhQVPTeGeRXkuvmuXnnEJfG1458532392/5xP481458532498833.jpg@!logo" src="http://sortime.img-cn-hangzhou.aliyuncs.com/b3BwS0JqallvdVAyczdZOXJPY2JuQXBKMXlkRQ==/IypbgGOR9lYEe8WYEVhQVPTeGeRXkuvmuXnnEJfG1458532392/5xP481458532498833.jpg@!logo">
+				</div>
+				<h2 class="text name">职能充电宝</h2>
+				<p class="text sign-name">职场充电宝，公众号：zhichangcdb，当下火爆度第一的职场人士在线学习提升平台~</p>
+				<div class="num-focus">145098人关注</div>
+				<div class="btn-focus">关注</div>
+			</div>
+			<div class="activity-type-swither">
+				<div class="div-nav-1" @click="change(1)"><span :class="{ classB: isB, classA: isA }" >进行中</span></div>
+				<div class="div-nav-2" @click="change(2)"><span :class="{ classB: isA, classA: isB }">已结束</span></div>
+			</div>
+			<ul >
+				<li v-for="item in items">
+					<!--b必须放在row里面-->
+					<div class="row">
+						<div class="col-xs-1 li-time">
+							<p class="day">今天</p>
+							<p class="stime">20:00</p>
+							<p class="xq">周日</p>
+						</div>
+						<div class="col-xs-10 middle">
+							<div class="icon">
+								<img ng-src="http://sortime.img-cn-hangzhou.aliyuncs.com/b3BwS0Jqc1VCT0FmM1MzMF8wa1Boa1dCa21aSQ==/f26bxrypyR5G5IOEcluUaDpsXaaHl1LocQi8qkci1473565525/OQyfR1473565524634.jpg@!list" src="http://sortime.img-cn-hangzhou.aliyuncs.com/b3BwS0Jqc1VCT0FmM1MzMF8wa1Boa1dCa21aSQ==/f26bxrypyR5G5IOEcluUaDpsXaaHl1LocQi8qkci1473565525/OQyfR1473565524634.jpg@!list">
+							</div>
+							<h3 class="name ng-binding" >让你“无所不搜”的资料搜索技巧，网上再无找不到的资源</h3>
+							<p>地点：讨论区/直播间</p>
+						</div>
+						<div class="col-xs-1">
+							<div class="l-icon btn-focus">+
+							</div>
+						</div>
+					</div>
+					<div class="line"></div>
+				</li>
+			</ul>
+		</div>
+		<script src="./officialaccount.js"></script>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+  float和display:inline-block的区别:
+  
+  1. 能实现的一致的效果，inline会简单，不用clear
+  2. vertical-align: middle;不能垂直对齐文字
+  3. 只要保证div内可以控制位置后那么其他的都是轻而易举的事情了！！！
+  4. 使用display: table;来实现垂直居中 :https://www.qianduan.net/css-to-achieve-the-vertical-center-of-the-five-kinds-of-methods/
+
+  
+-->
+<html>
+<head>
+  <title>float:left测试</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    div{
+      vertical-align: middle;
+    }
+    .div-out{
+      border: 1px solid #ADFF2F;
+      overflow: hidden;
+      display: table;
+    }
+    /*垂直居中*/
+    .div-out span{
+      display: table-cell;
+    vertical-align: middle;
+    }
+    .div1,.div2,.div3,.div4,.div5{
+      width: 100px;
+      height: 100px;
+      border: 2px solid #303030;
+      float: left;
+    }
+    .div1{
+     
+      background-color: #00FA9A;
+    }
+
+    .div-out2{
+      clear: both;
+      margin-top: 100px;
+    }
+    .div-out2 div{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border: 2px solid #303030;
+    }
+  </style>
+</head>
+<body>
+  <div class="div-out"><span>外部div</span>
+   <div class="div1">div1</div>
+   <div class="div2">div2</div>
+   <div class="div3">div3</div>
+   <div class="div4">div4</div>
+   <div class="div5">div5</div>
+ </div>
+  <div class="div-out2">外部div
+   <div class="div2-1">div1</div>
+   <div class="div2-2">div2</div>
+   <div class="div2-3">div3</div>
+   <div class="div2-4">div4</div>
+   <div class="div2-5">div5</div>
+ </div>
+</tabl5>
+</body5
+</html>

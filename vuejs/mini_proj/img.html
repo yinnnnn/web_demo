@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+  1.图片居中
+    img 外面包一个span 
+
+  2.什么时候用img什么时候用 background-color
+      http://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image
+    
+  3.vertical-align:middle 是文本和图片在一行的时候，图片居中显示，所以一定要两个span！！！
+      当行居中，而不是在div里面居中，我操，终于理解到了。如果文本居中了图片就会自动居中
+        http://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp
+
+  4. background-image的时候怎么设置span大小等于背景图片大小 ==== 貌似没有办法
+
+  5.
+
+
+
+-->
+<html>
+<head>
+  <title>图片居中</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+  /*
+  blog:http://www.cnblogs.com/cnliu/archive/2012/06/20/image-center.html
+  */
+  .center{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ADFF2F;
+    vertical-align:middle;
+    text-align: center;
+    /*height: 100px;*/
+    display: table;
+  }
+  img{
+    /*// width: 80px;*/
+    height: 100px;
+    width: auto;
+  }
+  .center span{
+   display: table-cell;
+   vertical-align:middle;
+ }
+
+
+ /*--------------------分割线--------------*/
+ /*曲线救国的方式*/
+ .center2{
+   width: 500px;
+   height: 500px;
+   border: 1px solid #ADFF2F;
+   margin-top: 100px;
+   vertical-align:middle;
+   text-align: center;
+   display: block;
+
+ }
+ .icon{
+  background-image: url("../img/andy.jpg");
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+.center2 .span-text{
+  line-height: 500px;
+  vertical-align:middle;
+  font-size: 50px;
+}
+.div-img{
+    background-image: url("../img/andy.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+}
+
+</style>
+</head>
+<body>
+  <div class="center">
+   <span> <img src="../img/andy.jpg" alt=""></span>
+ </div>
+
+ <div >
+   <a class="center2">
+     <span class="icon"></span>
+     <span class="span-text"><!-- 我要居中 --></span>
+   </a>
+ </div>
+
+ <div class="div-img">
+   
+ </div>
+</table>
+</body>
+</html>
