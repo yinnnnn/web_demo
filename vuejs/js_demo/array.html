@@ -23,7 +23,24 @@ Array类型
 8、排序方法
 	arr.reverse();//数组反转
 	arr.sort(compare);//可以传排序方法，默认按toString字符串排序
-9、
+9、操作方法：
+	- concat 重新拼接生成字符串
+	var colors = ["red","green"];
+	var colors2 = colors.concat("black",["blue","brown"]);
+	- slice 数组截取
+	var colors3 = colors.slice(1,4);
+	- splice：删除、插入
+	var remove = colors.splice(0,1);//删除第一项
+	var remove2 = colors.splice(0,1,"yellow","orange");//删除并插入2项
+
+10、位置方法
+	var remove = colors.indexOf(4);
+
+11、迭代方法
+	every、filter、forEach、map、some
+
+12、归并方法
+	reduce
 -->
 <html>
     <head>
