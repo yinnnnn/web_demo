@@ -1,0 +1,110 @@
+<!-- 
+
+
+echarts 
+
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>分析</title>
+	<!-- 引入 echarts.js -->
+	<script src="http://cdn.bootcss.com/echarts/3.3.0/echarts.min.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <script src="./vue.js"></script> -->
+	<script src="http://cdn.bootcss.com/vue/1.0.26/vue.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="./css/book.css"> -->
+
+	<style type="text/css">
+		.view{
+
+			width: 100%;
+			height:300px;
+		}
+		.tb-data{
+			width: 260px;
+			position: absolute;
+			top:0px;
+			right: 0px;
+			z-index: 999;
+			overflow: scroll;
+			height: 100%;
+			display: none;
+		}
+		.form1{
+			margin-top: 60px;
+			margin-left: 100px;
+			font-size: 16px;
+		}
+		select{
+			width: 70px;
+		}
+		button{
+			padding:0px 16px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+	<div id="app">
+		<form class="form1" onsubmit="return false";>
+			<span>开始年份:</span>
+			<select id="start_year">
+				<option  v-for="a in year_list " value="{{a}}">
+					{{a}}
+				</option>
+				<option value="1995" selected="true">1995</option>
+			</select>
+			<span>结束年份:</span>
+			<select id="end_year">
+				<option  v-for="a in year_list " value="{{a}}">
+					{{a}}
+				</option>
+				<option value="2016" selected="true">2016</option>
+			</select>
+
+			<button v-for="a in year_list " id="view_{{$index}}" @click="change1">	
+				查询{{$index}}
+			</button>
+		</form>
+		<div   id="bt_view" class="view"></div>
+		<!-- <div id="main" class="view"></div> -->
+		<div  v-for="a in year_list " id="bt_view_{{$index}}" class="view"></div>
+
+		
+		<div class="tb-data">
+			<table id="demo" class="table table-striped table-hover table-bordered">
+				<thead>
+					<tr>
+						<th v-on:click="sortBy('name')">num</th>
+						<!-- <th v-on:click="sortBy('age')">time</th> -->
+						<th v-on:click="sortBy('age')">time</th>
+					</tr>
+				</thead>
+				<tbody class="">
+					<tr v-for="a in num_list  | orderBy sortKey"> 
+						<!-- <td>{{a.spc}}</td> -->
+						<!-- <td>{{a.time}}</td> -->
+						<td>{{a.qihao}}</td>
+						<td>{{a.bt}}</td>
+					</tr>
+				</tbody>
+
+			</table>
+		</div>
+	</div>
+	
+	<!-- <script src="./echarts.js"></script> -->
+	<script>
+	var str = "<script type='text/javascript' src='./hc.js?"+Math.random()+"'><\/script>";
+	document.write(str);
+	</script>
+</body>
+</html>
