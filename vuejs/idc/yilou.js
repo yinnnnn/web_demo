@@ -112,5 +112,6 @@ var vm = new Vue({
 			test(type,i+"-"+i,1995,2016,"bt_view_"+j,i);
 			j--;
 		}
+		test("yilou_sum","单个号码遗漏平均值",1995,2016,"bt_view",i);
 	}
 })

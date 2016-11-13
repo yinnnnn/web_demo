@@ -52,7 +52,7 @@ elseif ($type === 'oc_time') {
 		$arr[] = ["spc"=>$row['spc'],'cnt'=>$row['cnt']];
 	}
 }
-// 出现次数
+// 出现遗漏
 elseif ($type === 'yilou') {
 	$start = isset($_GET['start'])?intval($_GET['start']):0;
 	$end = isset($_GET['end'])?intval($_GET['end']):0;
@@ -71,7 +71,29 @@ elseif ($type === 'yilou') {
 	$out[] = ['spc'=>$arr[$i]['qihao'],'cnt'=>0];
 	$arr = array_reverse($out);
 }
-
+// 出现遗漏
+elseif ($type === 'yilou_sum') {
+	$start = isset($_GET['start'])?intval($_GET['start']):0;
+	$end = isset($_GET['end'])?intval($_GET['end']):0;
+	$num = isset($_GET['num'])?intval($_GET['num']):0;
+	$out1 = [];
+	for($i=1;$i<50;$i++){
+		$sql = "SELECT * FROM t_6hc WHERE qihao>={$start}000 AND qihao<={$end}999 and spc={$i} order by qihao desc";
+		$result = mysqli_query($link, $sql);
+		$arr = [];
+		while ($row = mysqli_fetch_array($result)) {
+			$arr[] = $row;
+		}
+		$out = [];
+		for($j=0;$j<count($arr)-1;$j++) {
+			$out[] = $arr[$j]['inc']-$arr[$j+1]['inc'];
+		}
+		$out[] = 0;
+		$cnt = array_sum($out)/count($out);
+		$out1[] = ['spc'=>$i,'cnt'=>ceil($cnt)];
+	}
+	$arr = $out1;
+}
 
 echo json_encode($arr);
 
