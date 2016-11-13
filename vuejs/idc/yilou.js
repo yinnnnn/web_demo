@@ -101,32 +101,16 @@ var vm = new Vue({
 	},
 	created: function () {
 		var _self = this;
-		for(i=1995;i<=2016;i++){
+		for(i=1;i<=49;i++){
 			_self.year_list.push(i);
 		}
-		console.log("111");
-		// j=0;
-		// for(i=1995;i<=1996;i++){
-		// 	j++;
-		// 	test('oc_time',i+"-"+i,i,i,"bt_view_"+j);
-		// }
 	},
 	ready:function(){
-		// var type = 'yilou';
-		// var j=21;
-		// for(var i=1995;i<=2016;i++){
-		// 	test(type,i+"-"+i,i,i,"bt_view_"+j);
-		// 	j--;
-		// }
-		// test(type,1995+"-"+2016,1995,2016,"bt_view");
-
-
 		var type = 'yilou';
-		var j=21;
+		var j=48;
 		for(var i=1;i<=49;i++){
 			test(type,i+"-"+i,1995,2016,"bt_view_"+j,i);
 			j--;
 		}
-		// test(type,1995+"-"+2016,1995,2016,"bt_view");
 	}
 })

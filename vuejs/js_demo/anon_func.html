@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+
+    
+-->
+<html>
+<head>
+	<title>目录</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+
+	</style>
+</head>
+<body>
+	<div>
+
+	</div>
+	<!-- 第一段代码 -->
+	<script>
+		var a="hello world 1";
+		console.log(a);
+	</script>
+	<!-- 第二段代码 -->
+	<script>
+		var a="hello world 2nd";
+		console.log(a);
+	</script>
+	<!-- 第三段代码 -->
+	<script>
+		(function(){
+			var a="hello world 3";
+			console.log(a);
+		})();
+	</script>
+
+	<!-- 第一段代码 -->
+	<script>
+		var g_a="hello world 2nd";
+		console.log(a);
+	</script>
+	<!-- 第二段代码 -->
+	<script>
+		(function(){
+			var a="hello world 3";
+			console.log(a);
+			console.log(g_a);
+		})();
+	</script>
+	<!-- 重新打印全局变量 -->
+	<script>
+		console.log(g_a);
+	</script>
+	<script>
+		function init(){
+			var GLOBAL={};
+			GLOBAL.namespace = function(str){
+				var arr = str.split('.'),o=GLOBAL;
+				for (var i = arr[0] =='GLOBAL' ?1:0; i <arr.length; i++) {
+					o[arr[i]]=o[arr[i]] || {};
+					o=o[arr[i]];
+
+				}
+			}
+			GLOBAL.namespace("A.CAT");
+			GLOBAL.A.CAT.NAME="lucy";
+			console.log(GLOBAL)
+		}
+		// 统一执行入口
+		window.onload=init;
+	</script>
+</body>
+</html>

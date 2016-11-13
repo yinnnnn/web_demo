@@ -54,6 +54,8 @@ echarts
 
 	<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
 	<div id="app">
+		<button>查看出现次数</button>
+		<button @click="yilou">查看遗漏次数</button>
 		<form class="form1" onsubmit="return false";>
 			<span>开始年份:</span>
 			<select id="start_year">
@@ -103,8 +105,10 @@ echarts
 	
 	<!-- <script src="./echarts.js"></script> -->
 	<script>
-	var str = "<script type='text/javascript' src='./hc.js?"+Math.random()+"'><\/script>";
+		var str = "<script type='text/javascript' src='./yilou.js?"+Math.random()+"'><\/script>";
 	document.write(str);
+	// var str = "<script type='text/javascript' src='./hc.js?"+Math.random()+"'><\/script>";
+	// document.write(str);
 	</script>
 </body>
 </html>

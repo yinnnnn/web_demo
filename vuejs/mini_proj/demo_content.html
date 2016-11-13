@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+
+    
+-->
+<html>
+<head>
+	<title>目录</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"> -->
+	<style>
+		/*.h2{
+			position: relative;
+			border-bottom: 1px dashed #fff;
+		}
+		.h2 a{
+			position: absolute;
+			right: 0px;
+			top: 0px;
+		}
+		.p{
+			text-indent: 2em;
+			line-height: 150%;
+			margin: 0 0 20px 0;
+		}
+		.strong{
+			color: red;
+		}*/
+		fieldset{
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<!-- 第一种使用没有语义化标签的 -->
+	<div class="h2">标签的语义<a href="#">更多>></a></div>
+	<div class="p">段落一的内容<span class="strong">根据浏览器的默认样式</span></div>
+	<div class="p">段落二的内容……………………</div>
+
+	<!-- 语义化实现：使用语义化标签的代码 -->
+	<h2 class="h2">标签的语义<a href="#">更多>></a></h2>
+	<p>段落一的内容<span class="strong">根据浏览器的默认样式</span></p>
+	<p class="p">段落二的内容……………………</p>
+	<address>地址标签：<big>广东省</big> 深圳市 南山区</address>
+	<blockquote>这里是引用</blockquote>
+	<center>sss <del>删除线</del></center>
+
+
+	<!-- form表单 div版本 -->
+	<form action="" class="fieldset">
+		<div><span>账号： <input type="text" id="name"></span></div>
+		<div><span>密码： <input type="password" id="pw"></span></div>
+		<input type="submit" value="登陆" class="subBtn"/>
+	</form>
+
+	<!-- form表单 改进版 -->
+	<form action="" >
+		<fieldset>
+		<legend>登陆表单</legend><!-- 标签 -->
+			<p><label for="name">账号：</label><input type="text" id="name"></p>
+			<p><label for="pw">密码： <input type="password" id="pw"></p>
+			<input type="submit" value="登陆" class="subBtn"/>
+		</fieldset>
+	</form>
+
+	<!-- 表格 -->
+	<div class="caption">几种页面实现的比较</div>
+	<table border="1">
+		<tr class="thead"><td class="th">实现方式</td><td class="th">代码量</td></tr>
+		<tr class="thead"><td class="th">table布局</td><td>多</td></tr>
+		<tr class="thead"><td class="th">css布局</td><td>少</td></tr>
+	</table>
+
+	<!-- 表格：语义化 -->
+	<table border="1">
+	<caption>几种页面实现的比较</caption>
+	<thead>
+		<tr><th>实现方式</th><th>代码量</th></tr>
+	</thead>
+	<tbody>
+		<tr><th>table布局</th><td>多</td></tr>
+		<tr><th>css布局</th><td>少</td></tr>
+	</tbody>
+	</table>
+</body>
+</html>

@@ -13,7 +13,8 @@ and open the template in the editor.
     </head>
     <body>
         <div id="app">
-            <h1 >{{message}}</h1> <!-- 等价于    <span v-text="message"></span> -->
+            <h1 >{{message}}</h1> 
+            <!-- 等价于    <span v-text="message"></span> -->
             <!-- debounce 延时-->
             <!--v-model 实现双向绑定-->
             <input type="text" v-model="message" number debounce="500">
