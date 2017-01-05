@@ -7,6 +7,10 @@
   3. v-show控制显示和隐藏
   4.  display: inline-block; 不会继承，默认都是block
 
+  ====================
+  未解决：
+  1. 为什么里面的div没有设置圆角不一样  overflow:hidden 高！
+
 -->
 <html>
 <head>
@@ -29,14 +33,7 @@
       background-color: #F2F2F2;
     }
     .div1{
-     position: fixed;
-     left: 0px;
-     right: 0px;
-     top: 0px;
-     bottom: 0px;
-     z-index: 999;
-     background-color: rgba(0,0,0,0.5);
-     font-size: 16px;
+     position: fixed;     left: 0px;     right: 0px;     top: 0px;     bottom: 0px;     z-index: 999;     background-color: rgba(0,0,0,0.5);  font-size: 16px;
      /*display: none;*/
    }
    .container{
@@ -135,14 +132,16 @@
     background-color: #39add1;
     box-shadow: 1px 2px 3px 0 rgba(0,0,0,.12);
     margin-left: 20px;
+    margin-bottom: 50px;
+    overflow:hidden;
   }
   .enter{
     text-align: left;
     background-color: #fff;
         /*border-radius: 5px;*/
     font-size: 18px;
-    height:60px;
-    line-height:60px;
+    /*height:60px;*/
+    /*line-height:60px;*/
   }
   .item-main{
 

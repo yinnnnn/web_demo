@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+  1、box-sizing:border以内的整体宽高
+    
+-->
+<html>
+<head>
+  <title>目录</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .simple {
+      width: 500px;
+      margin: 20px auto;
+      border: solid red 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .fancy {
+      width: 500px;
+      margin: 20px auto;
+      padding: 50px;
+      border: solid blue 10px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .relative1 {
+      border: solid yellow 10px;
+      width: 700px;
+      height: 700px;
+      /*position: relative;*/
+      display: -webkit-flex;
+      display:         flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+    .relative2 {
+     width: 500px;
+     height: 500px;
+ /*    position: relative;
+     top: -20px;
+     left: 20px;*/
+     border: solid red 1px;
+     width: 500px;
+     height: 300px;
+     display: -webkit-flex;
+     display:         flex;
+     -webkit-align-items: center;
+     align-items: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+   }
+ </style>
+</head>
+<body>
+  <div class="simple">
+    <span>xxxxx</span>
+  </div>
+  <div class="fancy">
+    <span>ttt</span>
+  </div>
+
+
+  <div class="relative1"><div class="relative2">我要垂直居中</div>  
+  </div>
+
+</table>
+</body>
+</html>
