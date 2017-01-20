@@ -54,7 +54,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-
+	error_reporting(E_ALL);
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -88,7 +88,7 @@ switch (ENVIRONMENT)
 		echo 'The application environment is not set correctly.';
 		exit(1); // EXIT_ERROR
 }
-
+	error_reporting(E_ALL);
 /*
  *---------------------------------------------------------------
  * SYSTEM DIRECTORY NAME

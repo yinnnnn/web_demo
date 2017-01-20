@@ -4,16 +4,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Zhihu extends CI_Controller {
 	
-//	public function __construct()
-//	{
-////		self::__construct();
-////		$this->load->model('MTable');
-////		$this->load->helper('curl');
-//	}
-
-	public function index() {
+	public function __construct()
+	{
+		error_reporting(E_ALL);
+		parent::__construct();
 		$this->load->model('MTable');
 		$this->load->helper('curl');
+	}
+
+	public function index() {
 		$header = array(
 				'Host: api.zhihu.com',
 				'Authorization: Bearer 2.0AAAAmMwYAAAAIIDp0jn4CQsAAABgAlVNIqBxWAD6uwlJn4qBUGqBRC0uioFvTDMKkg',

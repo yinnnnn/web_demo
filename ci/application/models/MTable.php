@@ -8,6 +8,7 @@ class MTable extends CI_Model{
     {
         parent::__construct();
         $this->default_db=$this->load_database('default');
+		$this->default_db->query('set names utf8');
     }
 	
 	/**
@@ -29,15 +30,16 @@ class MTable extends CI_Model{
 		return $CI->mydb [$name];
 	}
 	
-	public function insert($r){
-		return $ret = $this->default_db->insert($this->tb_coll, $r);
+	public function insert($table,$r){
+		return $this->default_db->insert($table, $r);
+//		echo $ret = $this->default_db->last_query();
 	}
 		
-	public function query($field='*'){
+	public function query($table,$field='*'){
 		
         $query = $this->default_db
             ->select($field)
-            ->from($this->tb_coll)
+            ->from($table)
             ->get();
 
         $row = $query->result_array();

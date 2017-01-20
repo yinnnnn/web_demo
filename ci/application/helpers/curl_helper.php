@@ -135,22 +135,21 @@ if (!function_exists('tj_array_sort'))
 
 if (!function_exists('f_curl'))
 {
-    /**
-     * 数组转换为字符
-     * @param array $array 数组
-     * @param int $level 深度
-     * @return string
-     */
-    function f_curl($url, $header) {
+    function f_curl($url, $header,$timeout=0) {
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL, $url);
 			curl_setopt($ch, CURLOPT_POST, 0);
 			curl_setopt($ch, CURLOPT_ENCODING, "");  //不压缩
-			curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+			if(!empty($header))
+				curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
 			//	显示
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 			curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			//超时
+			curl_setopt($ch, CURLOPT_CONNECTTIMEOUT ,0); 
+			curl_setopt($ch, CURLOPT_TIMEOUT_MS, $timeout); //timeout in seconds
+
 			return $data = curl_exec($ch);
     }
 }

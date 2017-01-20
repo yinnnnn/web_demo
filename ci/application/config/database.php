@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '120.25.78.52:3306',
+	'hostname' => '127.0.0.1:3306',
 	'username' => 'vernon',
 	'password' => 'vernon',
-	'database' => 'statics',
+	'database' => 'wechat',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
