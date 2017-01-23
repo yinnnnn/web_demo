@@ -1,19 +1,15 @@
 <?php
-
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Index extends CI_Controller {
-	
-	public function __construct()
-	{
-		parent::__construct();
-		header('Access-Control-Allow-Origin:*');
-		$allow_header = 'X-ACCESS_TOKEN,Access-Control-Allow-Origin,Authorization,Origin,x-requested-with,Content-Type,Content-Range,Content-Disposition,Content-Description';
-		header('Access-Control-Allow-Headers: ' . $allow_header);
-	}
-
-	public function index() {
-		echo "hellor world";
-	}
-
+date_default_timezone_set('Asia/Shanghai');
+$link = mysqli_connect('120.25.78.52:3306', 'vernon', 'vernon');
+if (!$link) {
+        die('Could not connect to MySQL: ' . mysql_error());
 }
+
+mysqli_select_db($link, "wechat");
+mysqli_query($link,"set names utf8");
+
+$sql = "INSERT INTO `statics`.`TableName1` (`page`,`ip`,`user_agent`)
+	VALUES('index.php','{$_SERVER['REMOTE_ADDR']}','{$_SERVER['HTTP_USER_AGENT']}'); ";
+$result = mysqli_query($link, $sql);
+
+echo "Hello World";
